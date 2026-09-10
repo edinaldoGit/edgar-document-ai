@@ -1,0 +1,14 @@
+[project]
+name = "edgar-document-ai"
+version = "0.1.0"
+description = "Fine-grained multimodal RAG architecture for document intelligence and evidence-grounded question answering."
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/edgar"]
