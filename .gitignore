@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Keep environment template
+!.env.example
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checking / linting
+.mypy_cache/
+.ruff_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+logs/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+models/
+
+# ML caches
+.cache/
+huggingface/
+
+# EDGAR runtime storage
+storage/*
+!storage/.gitkeep
+
+# Local datasets
+data/*
+!data/.gitkeep
+
+# Qdrant local data
+qdrant_storage/
+
+# OS files
+.DS_Store
+Thumbs.db
