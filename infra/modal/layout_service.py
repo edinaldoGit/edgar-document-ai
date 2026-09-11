@@ -29,7 +29,7 @@ model_cache = modal.Volume.from_name("edgar-model-cache")
     gpu="T4",
     volumes={"/root/.cache/huggingface": model_cache},
     max_containers=1,
-    scaledown_window=300,
+    scaledown_window=30,
 )
 class LayoutService:
     @modal.enter()
