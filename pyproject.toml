@@ -8,6 +8,11 @@ dependencies = [
     "pymupdf>=1.28.2",
 ]
 
+[project.optional-dependencies]
+cloud = [
+    "modal==1.5.5",
+]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
