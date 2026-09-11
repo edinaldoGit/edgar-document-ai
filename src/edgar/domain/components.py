@@ -13,6 +13,8 @@ class ComponentType(str, Enum):
     ISOLATE_FORMULA = "isolate_formula"
     FIGURE_CAPTION = "figure_caption"
     TABLE_CAPTION = "table_caption"
+    TABLE_FOOTNOTE = "table_footnote"
+    FORMULA_CAPTION = "formula_caption"
     ABANDON = "abandon"
     OTHER = "other"
 
