@@ -4,7 +4,7 @@ import pymupdf
 import pytest
 
 from edgar.domain import Document
-from edgar.ingestion import PyMuPDFRasterizer
+from edgar.ingestion.rasterization import PyMuPDFRasterizer
 
 
 def create_test_pdf(path: Path, page_count: int = 2) -> None:
