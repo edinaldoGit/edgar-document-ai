@@ -30,7 +30,13 @@ class TextExtractor(Protocol):
 
 
 class VisualDescriber(Protocol):
-    def describe(self, component: DocumentComponent) -> str | None: ...
+    def describe(
+        self,
+        component: DocumentComponent,
+        *,
+        prompt: str,
+        context: str | None = None,
+    ) -> str | None: ...
 
 
 class ComponentIndexer(Protocol):
