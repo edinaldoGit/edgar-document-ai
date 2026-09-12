@@ -3,6 +3,7 @@ from enum import Enum
 from uuid import UUID, uuid4
 
 from edgar.domain.geometry import BoundingBox
+from edgar.domain.tables import TableStructure
 
 
 class ComponentType(str, Enum):
@@ -29,6 +30,7 @@ class DocumentComponent:
     detection_confidence: float | None = None
     text_extracted: str | None = None
     visual_description: str | None = None
+    table_structure: TableStructure | None = None
     crop_ref: str | None = None
     parent_component_id: UUID | None = None
 

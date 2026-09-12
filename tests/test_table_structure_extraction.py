@@ -139,30 +139,32 @@ def test_extracts_reconstructed_table_structure(tmp_path, monkeypatch):
         storage_root=tmp_path,
     )
 
-    header, rows = extractor.extract(
+    table_structure = extractor.extract(
         document,
         page,
         component,
     )
 
-    assert header == [
+    assert table_structure is not None
+
+    assert table_structure.header == (
         "Atividades",
         "Mar",
         "Abr",
-    ]
+    )
 
-    assert rows == [
-        [
+    assert table_structure.rows == (
+        (
             "Definição do problema",
             "X",
             None,
-        ],
-        [
+        ),
+        (
             "Revisão",
             "X",
             "X",
-        ],
-    ]
+        ),
+    )
 
 
 def test_rejects_component_from_different_page(tmp_path):

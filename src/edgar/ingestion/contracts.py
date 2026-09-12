@@ -1,7 +1,12 @@
 from collections.abc import Sequence
 from typing import Protocol
 
-from edgar.domain import Document, DocumentComponent, DocumentPage
+from edgar.domain import (
+    Document,
+    DocumentComponent,
+    DocumentPage,
+    TableStructure,
+)
 
 
 class PageRasterizer(Protocol):
@@ -27,6 +32,15 @@ class TextExtractor(Protocol):
         page: DocumentPage,
         component: DocumentComponent,
     ) -> str | None: ...
+
+
+class TableStructureExtractor(Protocol):
+    def extract(
+        self,
+        document: Document,
+        page: DocumentPage,
+        component: DocumentComponent,
+    ) -> TableStructure | None: ...
 
 
 class VisualDescriber(Protocol):

@@ -2,7 +2,12 @@ from pathlib import Path
 
 import pymupdf
 
-from edgar.domain import Document, DocumentComponent, DocumentPage
+from edgar.domain import (
+    Document,
+    DocumentComponent,
+    DocumentPage,
+    TableStructure,
+)
 from edgar.ingestion.pdf_geometry import bbox_pixels_to_page_points
 from edgar.ingestion.table_structure import PositionedText, reconstruct_table
 
@@ -16,7 +21,7 @@ class PyMuPDFTableStructureExtractor:
         document: Document,
         page: DocumentPage,
         component: DocumentComponent,
-    ) -> tuple[list[str], list[list[str | None]]]:
+    ) -> TableStructure | None:
         self._validate_relationships(document, page, component)
 
         source_path = self._resolve_source_path(document.source_ref)
@@ -66,7 +71,15 @@ class PyMuPDFTableStructureExtractor:
                     )
                 )
 
-        return reconstruct_table(items)
+        header, rows = reconstruct_table(items)
+
+        if not header:
+            return None
+
+        return TableStructure(
+            header=tuple(header),
+            rows=tuple(tuple(row) for row in rows),
+        )
 
     def _resolve_source_path(self, source_ref: str) -> Path:
         path = Path(source_ref)
