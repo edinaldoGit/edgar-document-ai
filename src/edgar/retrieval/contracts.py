@@ -12,3 +12,13 @@ class EvidenceSearcher(Protocol):
         limit: int = 5,
         doc_id: UUID | None = None,
     ) -> list[RetrievedEvidence]: ...
+
+
+class EvidenceRetriever(Protocol):
+    def retrieve(
+        self,
+        query: str,
+        *,
+        limit: int = 5,
+        doc_id: UUID | None = None,
+    ) -> list[RetrievedEvidence]: ...
