@@ -122,3 +122,122 @@ def test_empty_upsert_does_not_create_collection():
     assert not client.collection_exists(
         collection_name="empty-test",
     )
+
+
+def test_search_returns_most_similar_evidence():
+    client = QdrantClient(":memory:")
+
+    first = make_embedded_record(
+        embedding=[
+            1.0,
+            0.0,
+            0.0,
+        ],
+        text="Primeira evidência.",
+    )
+
+    second = make_embedded_record(
+        embedding=[
+            0.0,
+            1.0,
+            0.0,
+        ],
+        text="Segunda evidência.",
+    )
+
+    store = QdrantVectorStore(
+        client=client,
+        collection_name="search-test",
+        vector_size=3,
+    )
+
+    store.upsert(
+        [
+            first,
+            second,
+        ]
+    )
+
+    results = store.search(
+        [
+            1.0,
+            0.0,
+            0.0,
+        ],
+        limit=2,
+    )
+
+    assert len(results) == 2
+    assert results[0].component_id == first.record.component_id
+    assert results[0].text == "Primeira evidência."
+    assert results[0].score == pytest.approx(1.0)
+    assert results[0].bbox == first.record.bbox
+
+
+def test_search_can_filter_by_document():
+    client = QdrantClient(":memory:")
+
+    first = make_embedded_record(
+        embedding=[
+            1.0,
+            0.0,
+            0.0,
+        ],
+        text="Documento um.",
+    )
+
+    second = make_embedded_record(
+        embedding=[
+            1.0,
+            0.0,
+            0.0,
+        ],
+        text="Documento dois.",
+    )
+
+    store = QdrantVectorStore(
+        client=client,
+        collection_name="filter-test",
+        vector_size=3,
+    )
+
+    store.upsert(
+        [
+            first,
+            second,
+        ]
+    )
+
+    results = store.search(
+        [
+            1.0,
+            0.0,
+            0.0,
+        ],
+        doc_id=first.record.doc_id,
+    )
+
+    assert len(results) == 1
+    assert results[0].doc_id == first.record.doc_id
+    assert results[0].text == "Documento um."
+
+
+def test_search_returns_empty_when_collection_does_not_exist():
+    client = QdrantClient(":memory:")
+
+    store = QdrantVectorStore(
+        client=client,
+        collection_name="missing",
+        vector_size=3,
+    )
+
+    assert (
+        store.search(
+            [
+                1.0,
+                0.0,
+                0.0,
+            ]
+        )
+        == []
+    )
