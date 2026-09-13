@@ -1,6 +1,12 @@
-from edgar.domain import DocumentComponent
+from edgar.domain import ComponentType, DocumentComponent
 from edgar.indexing.records import IndexRecord
 from edgar.indexing.representation import build_indexable_text
+
+ABSORBED_CHILD_TYPES = {
+    ComponentType.FIGURE_CAPTION: ComponentType.FIGURE,
+    ComponentType.TABLE_CAPTION: ComponentType.TABLE,
+    ComponentType.TABLE_FOOTNOTE: ComponentType.TABLE,
+}
 
 
 def prepare_index_records(
@@ -9,6 +15,12 @@ def prepare_index_records(
     records = []
 
     for component in components:
+        if _is_absorbed_by_parent(
+            component,
+            components,
+        ):
+            continue
+
         text = build_indexable_text(
             component,
             components,
@@ -32,3 +44,30 @@ def prepare_index_records(
         )
 
     return records
+
+
+def _is_absorbed_by_parent(
+    component: DocumentComponent,
+    components: list[DocumentComponent],
+) -> bool:
+    expected_parent_type = ABSORBED_CHILD_TYPES.get(component.component_type)
+
+    if expected_parent_type is None:
+        return False
+
+    if component.parent_component_id is None:
+        return False
+
+    parent = next(
+        (
+            candidate
+            for candidate in components
+            if candidate.component_id == component.parent_component_id
+        ),
+        None,
+    )
+
+    if parent is None:
+        return False
+
+    return parent.component_type == expected_parent_type
