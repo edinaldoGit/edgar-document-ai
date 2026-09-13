@@ -37,3 +37,14 @@ def test_rejects_blank_evidence_context():
             question="Pergunta válida",
             evidence_context="   ",
         )
+
+
+def test_forbids_adding_external_explanations():
+    result = build_grounded_answer_prompt(
+        question="Como funciona o fallback?",
+        evidence_context=("Evidence 1\nO OCR é utilizado como fallback."),
+    )
+
+    assert "Não expanda siglas" in result
+    assert "conhecimento externo" in result
+    assert "exatamente como aparecem nas evidências" in result
