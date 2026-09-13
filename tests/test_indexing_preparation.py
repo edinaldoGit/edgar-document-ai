@@ -183,3 +183,86 @@ def test_absorbs_table_caption_and_footnote_into_table():
     assert record.component_id == table.component_id
     assert "Tabela 1 – Resultados." in record.text
     assert "Fonte: elaborado pelo autor." in record.text
+
+
+def test_skips_orphan_figure_caption_embedded_inside_figure():
+    doc_id = uuid4()
+
+    figure = DocumentComponent(
+        doc_id=doc_id,
+        page_index=26,
+        component_type=ComponentType.FIGURE,
+        bbox=BoundingBox(
+            x1=331,
+            y1=1621,
+            x2=2205,
+            y2=1982,
+        ),
+        visual_description=("Diagrama sobre a definição do metro."),
+    )
+
+    caption = DocumentComponent(
+        doc_id=doc_id,
+        page_index=26,
+        component_type=ComponentType.FIGURE_CAPTION,
+        bbox=BoundingBox(
+            x1=1107,
+            y1=1894,
+            x2=1682,
+            y2=1986,
+        ),
+        text_extracted=("Light travels a distance of 1 meter in 1/299,792,458 of a second"),
+    )
+
+    records = prepare_index_records(
+        [
+            figure,
+            caption,
+        ]
+    )
+
+    assert len(records) == 1
+    assert records[0].component_id == figure.component_id
+
+
+def test_keeps_orphan_figure_caption_outside_figure():
+    doc_id = uuid4()
+
+    figure = DocumentComponent(
+        doc_id=doc_id,
+        page_index=0,
+        component_type=ComponentType.FIGURE,
+        bbox=BoundingBox(
+            x1=100,
+            y1=100,
+            x2=500,
+            y2=500,
+        ),
+        visual_description="Figura válida.",
+    )
+
+    caption = DocumentComponent(
+        doc_id=doc_id,
+        page_index=0,
+        component_type=ComponentType.FIGURE_CAPTION,
+        bbox=BoundingBox(
+            x1=100,
+            y1=550,
+            x2=500,
+            y2=600,
+        ),
+        text_extracted="Legenda órfã legítima.",
+    )
+
+    records = prepare_index_records(
+        [
+            figure,
+            caption,
+        ]
+    )
+
+    assert len(records) == 2
+    assert {record.component_id for record in records} == {
+        figure.component_id,
+        caption.component_id,
+    }
