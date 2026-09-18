@@ -8,7 +8,24 @@ import modal
 APP_NAME = "edgar-visual-description-service"
 MODEL_REPO = "Qwen/Qwen3-VL-4B-Instruct"
 MODEL_CACHE_DIR = Path("/root/.cache/huggingface/models--Qwen--Qwen3-VL-4B-Instruct")
-MAX_NEW_TOKENS = 384
+MAX_NEW_TOKENS = 128
+MAX_IMAGE_SIDE = 1024
+
+def resize_visual_if_needed(image):
+    width, height = image.size
+    largest_side = max(width, height)
+
+    if largest_side <= MAX_IMAGE_SIDE:
+        return image
+
+    scale = MAX_IMAGE_SIDE / largest_side
+    new_size = (
+        int(width * scale),
+        int(height * scale),
+    )
+
+    return image.resize(new_size)
+
 
 app = modal.App(APP_NAME)
 
@@ -59,7 +76,7 @@ class VisualDescriptionService:
 
         self.model = Qwen3VLForConditionalGeneration.from_pretrained(
             model_path,
-            torch_dtype="auto",
+            torch_dtype="float16",
             device_map="auto",
             local_files_only=True,
         )
@@ -87,6 +104,7 @@ class VisualDescriptionService:
             raise ValueError("Prompt must not be blank.")
 
         visual = Image.open(BytesIO(image_bytes)).convert("RGB")
+        visual = resize_visual_if_needed(visual)
 
         user_text = prompt.strip()
 

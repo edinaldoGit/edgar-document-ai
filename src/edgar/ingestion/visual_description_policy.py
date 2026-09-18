@@ -1,14 +1,13 @@
 from edgar.domain import ComponentType, DocumentComponent
 
-VISUAL_DESCRIPTION_TYPES = frozenset(
-    {
-        ComponentType.FIGURE,
-        ComponentType.TABLE,
-    }
-)
-
 
 def requires_visual_description(
     component: DocumentComponent,
 ) -> bool:
-    return component.component_type in VISUAL_DESCRIPTION_TYPES
+    if component.component_type == ComponentType.FIGURE:
+        return True
+
+    if component.component_type == ComponentType.TABLE:
+        return component.table_structure is None
+
+    return False

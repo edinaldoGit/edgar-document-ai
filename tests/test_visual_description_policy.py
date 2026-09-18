@@ -2,7 +2,12 @@ from uuid import uuid4
 
 import pytest
 
-from edgar.domain import BoundingBox, ComponentType, DocumentComponent
+from edgar.domain import (
+    BoundingBox,
+    ComponentType,
+    DocumentComponent,
+    TableStructure,
+)
 from edgar.ingestion.visual_description_policy import (
     requires_visual_description,
 )
@@ -22,17 +27,26 @@ def make_component(component_type):
     )
 
 
-@pytest.mark.parametrize(
-    "component_type",
-    [
-        ComponentType.FIGURE,
-        ComponentType.TABLE,
-    ],
-)
-def test_visual_components_require_description(component_type):
-    component = make_component(component_type)
+def test_figure_requires_visual_description():
+    component = make_component(ComponentType.FIGURE)
 
     assert requires_visual_description(component)
+
+
+def test_table_without_structure_requires_visual_description():
+    component = make_component(ComponentType.TABLE)
+
+    assert requires_visual_description(component)
+
+
+def test_table_with_structure_does_not_require_visual_description():
+    component = make_component(ComponentType.TABLE)
+    component.table_structure = TableStructure(
+        header=("Column",),
+        rows=(("Value",),),
+    )
+
+    assert not requires_visual_description(component)
 
 
 @pytest.mark.parametrize(

@@ -24,6 +24,7 @@ model_cache = modal.Volume.from_name(
 
 @app.cls(
     image=image,
+    gpu="T4",
     volumes={
         "/root/.cache/huggingface": model_cache,
     },
@@ -67,6 +68,7 @@ class EmbeddingService:
 
         embeddings = self.model.encode(
             texts,
+            batch_size=32,
             normalize_embeddings=True,
         )
 
