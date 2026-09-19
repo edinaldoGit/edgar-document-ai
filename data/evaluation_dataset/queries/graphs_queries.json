@@ -1,0 +1,86 @@
+[
+  {
+    "id": "graphs_q001",
+    "document": "graphs_001",
+    "question": "O que caracteriza um grafo completo?",
+    "question_type": "text",
+    "difficulty": "easy",
+    "evaluation_category": "text_retrieval",
+    "expected_evidence": {
+      "source_page": 13,
+      "page": 13,
+      "component_type": "plain_text",
+      "description": "Definição de grafo completo apresentada no capítulo de classes de grafos."
+    }
+  },
+  {
+    "id": "graphs_q002",
+    "document": "graphs_001",
+    "question": "Qual figura apresenta um exemplo de grafo não dirigido com seus vértices e arestas?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 13,
+      "page": 13,
+      "component_type": "figure",
+      "description": "Figura contendo um exemplo de grafo não dirigido."
+    }
+  },
+  {
+    "id": "graphs_q003",
+    "document": "graphs_001",
+    "question": "Como a incidência e adjacência são representadas no exemplo de grafo apresentado?",
+    "question_type": "figure",
+    "difficulty": "hard",
+    "evaluation_category": "multimodal_reasoning",
+    "expected_evidence": {
+      "source_page": 14,
+      "page": 14,
+      "component_type": "figure",
+      "description": "Figura apresentando incidência e adjacência em um grafo."
+    }
+  },
+  {
+    "id": "graphs_q004",
+    "document": "graphs_001",
+    "question": "Quais operações são consideradas comuns em estruturas de dados de grafos?",
+    "question_type": "table",
+    "difficulty": "medium",
+    "evaluation_category": "table_retrieval",
+    "expected_evidence": {
+      "source_page": 37,
+      "page": 37,
+      "component_type": "table",
+      "description": "Quadro com operações comuns em estruturas de dados de grafos."
+    }
+  },
+  {
+    "id": "graphs_q005",
+    "document": "graphs_001",
+    "question": "Qual representação visual demonstra uma árvore de busca em largura?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 49,
+      "page": 49,
+      "component_type": "figure",
+      "description": "Figura apresentando exemplo de árvore de busca em largura."
+    }
+  },
+  {
+    "id": "graphs_q006",
+    "document": "graphs_001",
+    "question": "Qual figura representa os movimentos possíveis de um cavalo em um tabuleiro?",
+    "question_type": "figure",
+    "difficulty": "hard",
+    "evaluation_category": "multimodal_reasoning",
+    "expected_evidence": {
+      "source_page": 95,
+      "page": 95,
+      "component_type": "figure",
+      "description": "Figura representando movimentos do cavalo no tabuleiro de xadrez."
+    }
+  }
+]

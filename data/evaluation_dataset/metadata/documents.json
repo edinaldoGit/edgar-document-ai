@@ -1,0 +1,50 @@
+[
+  {
+    "id": "statistics_001",
+    "title": "32-EBR Unifal",
+    "domain": "statistics",
+    "original_file": "32-EBR_Unifal.pdf",
+    "selected_pages": {
+      "start": 37,
+      "end": 140
+    },
+    "selection_reason": "Includes descriptive statistics, probability, statistical inference, regression and correlation, containing tables, graphs and mathematical expressions.",
+    "status": "selected"
+  },
+  {
+    "id": "calculus_001",
+    "title": "Calculus Volume 1",
+    "domain": "calculus",
+    "original_file": "CalculusVolume1-OP.pdf",
+    "selected_pages": {
+      "start": 131,
+      "end": 348
+    },
+    "selection_reason": "Includes limits and derivatives chapters, containing graphical representations, mathematical formulas and explanatory text.",
+    "status": "selected"
+  },
+  {
+    "id": "graphs_001",
+    "title": "Grafos",
+    "domain": "computer_science",
+    "original_file": "Grafos-versao-final.pdf",
+    "selected_pages": {
+      "start": 10,
+      "end": 113
+    },
+    "selection_reason": "Includes fundamental graph concepts, graph representation, searches, connectivity and Eulerian/Hamiltonian graphs with strong visual components.",
+    "status": "selected"
+  },
+  {
+    "id": "physics_001",
+    "title": "University Physics Volume 1",
+    "domain": "physics",
+    "original_file": "university-physics-volume-1_-_WEB.pdf",
+    "selected_pages": {
+      "start": 1,
+      "end": 152
+    },
+    "selection_reason": "Includes motion, vectors and Newtonian mechanics chapters containing diagrams, equations and physical representations.",
+    "status": "selected"
+  }
+]

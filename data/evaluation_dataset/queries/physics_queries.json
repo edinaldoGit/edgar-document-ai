@@ -1,0 +1,86 @@
+[
+  {
+    "id": "physics_q001",
+    "document": "physics_001",
+    "question": "Como o deslocamento é definido em relação à posição inicial e final de um objeto?",
+    "question_type": "text",
+    "difficulty": "easy",
+    "evaluation_category": "text_retrieval",
+    "expected_evidence": {
+      "source_page": 2,
+      "page": 2,
+      "component_type": "plain_text",
+      "description": "Definição textual de deslocamento apresentada na seção Position, Displacement, and Average Velocity."
+    }
+  },
+  {
+    "id": "physics_q002",
+    "document": "physics_001",
+    "question": "Qual gráfico representa a posição de Jill em função do tempo durante seu movimento?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 6,
+      "page": 6,
+      "component_type": "figure",
+      "description": "Gráfico de posição versus tempo apresentado na Figura 3.5."
+    }
+  },
+  {
+    "id": "physics_q003",
+    "document": "physics_001",
+    "question": "Qual figura compara o movimento de duas bolas, uma em queda livre e outra com velocidade horizontal inicial?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "multimodal_reasoning",
+    "expected_evidence": {
+      "source_page": 59,
+      "page": 59,
+      "component_type": "figure",
+      "description": "Diagrama comparando os movimentos das duas bolas apresentado na Figura 4.8."
+    }
+  },
+  {
+    "id": "physics_q004",
+    "document": "physics_001",
+    "question": "Qual figura apresenta diagramas de corpo livre mostrando forças atuando sobre um objeto?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 100,
+      "page": 100,
+      "component_type": "figure",
+      "description": "Diagramas de corpo livre apresentados na Figura 5.4."
+    }
+  },
+  {
+    "id": "physics_q005",
+    "document": "physics_001",
+    "question": "Qual figura demonstra a decomposição das forças em um plano inclinado?",
+    "question_type": "figure",
+    "difficulty": "hard",
+    "evaluation_category": "multimodal_reasoning",
+    "expected_evidence": {
+      "source_page": 126,
+      "page": 126,
+      "component_type": "figure",
+      "description": "Representação das forças e componentes em um plano inclinado na Figura 5.22."
+    }
+  },
+  {
+    "id": "physics_q006",
+    "document": "physics_001",
+    "question": "Quais valores de aceleração centrípeta são apresentados para diferentes objetos?",
+    "question_type": "table",
+    "difficulty": "medium",
+    "evaluation_category": "table_retrieval",
+    "expected_evidence": {
+      "source_page": 77,
+      "page": 77,
+      "component_type": "table",
+      "description": "Tabela 4.1 contendo acelerações centrípetas típicas."
+    }
+  }
+]

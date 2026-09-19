@@ -1,0 +1,11 @@
+{
+  "id": "domain_q001",
+  "document": "document_id",
+  "question": "Pergunta feita pelo usuário.",
+  "question_type": "text|figure|table|formula",
+  "expected_evidence": {
+    "page": 0,
+    "component_type": "plain_text|figure|table|isolate_formula",
+    "description": "Descrição da evidência esperada."
+  }
+}

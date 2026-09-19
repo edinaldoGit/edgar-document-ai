@@ -57,7 +57,6 @@ storage/*
 !storage/.gitkeep
 
 # Local datasets
-data/*
 !data/.gitkeep
 
 # Qdrant local data
@@ -66,3 +65,22 @@ qdrant_storage/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Local datasets
+data/*
+!data/.gitkeep
+
+# EDGAR evaluation dataset metadata and queries are versioned
+!data/evaluation_dataset/
+!data/evaluation_dataset/metadata/
+!data/evaluation_dataset/metadata/**
+!data/evaluation_dataset/queries/
+!data/evaluation_dataset/queries/**
+
+# Evaluation PDFs remain local
+data/evaluation_dataset/originals/
+data/evaluation_dataset/processed/
+
+# Experiment generated artifacts
+experiments/runs/
+experiments/datasets/

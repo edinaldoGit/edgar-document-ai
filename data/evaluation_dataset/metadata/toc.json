@@ -1,0 +1,2717 @@
+[
+  {
+    "filename": "32-EBR_Unifal.pdf",
+    "page_count": 197,
+    "toc": [
+      {
+        "level": 1,
+        "title": "PREFÁCIO",
+        "page": 17
+      },
+      {
+        "level": 1,
+        "title": "APRESENTAÇÃO",
+        "page": 19
+      },
+      {
+        "level": 1,
+        "title": "INTRODUÇÃO",
+        "page": 21
+      },
+      {
+        "level": 2,
+        "title": "Introdução ao R",
+        "page": 21
+      },
+      {
+        "level": 3,
+        "title": "Baixando e instalando",
+        "page": 21
+      },
+      {
+        "level": 3,
+        "title": "Iniciando o R",
+        "page": 23
+      },
+      {
+        "level": 3,
+        "title": "Lendo arquivos",
+        "page": 23
+      },
+      {
+        "level": 3,
+        "title": "Funções básicas",
+        "page": 24
+      },
+      {
+        "level": 3,
+        "title": "Pedindo ajuda",
+        "page": 25
+      },
+      {
+        "level": 3,
+        "title": "Objetos",
+        "page": 26
+      },
+      {
+        "level": 2,
+        "title": "Alguns conceitos importantes",
+        "page": 29
+      },
+      {
+        "level": 3,
+        "title": "Classificações de uma população",
+        "page": 30
+      },
+      {
+        "level": 3,
+        "title": "Tipos de variáveis",
+        "page": 30
+      },
+      {
+        "level": 4,
+        "title": "Qualitativas",
+        "page": 30
+      },
+      {
+        "level": 4,
+        "title": "Qualitativas nominais",
+        "page": 30
+      },
+      {
+        "level": 4,
+        "title": "Qualitativas ordinais",
+        "page": 30
+      },
+      {
+        "level": 4,
+        "title": "Quantitativas",
+        "page": 30
+      },
+      {
+        "level": 4,
+        "title": "Quantitativas discretas",
+        "page": 30
+      },
+      {
+        "level": 4,
+        "title": "Quantitativas contínuas",
+        "page": 31
+      },
+      {
+        "level": 2,
+        "title": "Principais aplicações da Estatística",
+        "page": 31
+      },
+      {
+        "level": 3,
+        "title": "Pesquisa científica",
+        "page": 31
+      },
+      {
+        "level": 3,
+        "title": "Processos produtivos",
+        "page": 31
+      },
+      {
+        "level": 3,
+        "title": "Levantamentos em geral",
+        "page": 31
+      },
+      {
+        "level": 1,
+        "title": "TÉCNICAS DE SOMATÓRIO",
+        "page": 33
+      },
+      {
+        "level": 2,
+        "title": "Introdução",
+        "page": 33
+      },
+      {
+        "level": 2,
+        "title": "Propriedades dos somatórios",
+        "page": 34
+      },
+      {
+        "level": 2,
+        "title": "Somatórios no R",
+        "page": 35
+      },
+      {
+        "level": 1,
+        "title": "ESTATÍSTICA DESCRITIVA",
+        "page": 37
+      },
+      {
+        "level": 2,
+        "title": "Introdução",
+        "page": 37
+      },
+      {
+        "level": 2,
+        "title": "Variáveis qualitativas",
+        "page": 38
+      },
+      {
+        "level": 3,
+        "title": "Representações gráficas das distribuições de frequências",
+        "page": 39
+      },
+      {
+        "level": 4,
+        "title": "Gráfico de barras e de colunas",
+        "page": 39
+      },
+      {
+        "level": 4,
+        "title": "Gráfico de pizza ou Setograma",
+        "page": 39
+      },
+      {
+        "level": 2,
+        "title": "Variáveis quantitativas discretas",
+        "page": 40
+      },
+      {
+        "level": 3,
+        "title": "Representação gráfica da distribuição de frequências",
+        "page": 41
+      },
+      {
+        "level": 4,
+        "title": "Gráfico de agulhas",
+        "page": 41
+      },
+      {
+        "level": 2,
+        "title": "Variáveis quantitativas contínuas",
+        "page": 42
+      },
+      {
+        "level": 3,
+        "title": "Representação gráfica da distribuição de frequências",
+        "page": 44
+      },
+      {
+        "level": 4,
+        "title": "Histograma",
+        "page": 44
+      },
+      {
+        "level": 2,
+        "title": "Medidas de posição",
+        "page": 46
+      },
+      {
+        "level": 3,
+        "title": "Média (Me)",
+        "page": 47
+      },
+      {
+        "level": 4,
+        "title": "Propriedades da Média",
+        "page": 47
+      },
+      {
+        "level": 3,
+        "title": "Mediana (Md)",
+        "page": 49
+      },
+      {
+        "level": 4,
+        "title": "Propriedade da Mediana",
+        "page": 49
+      },
+      {
+        "level": 3,
+        "title": "Moda (Mo)",
+        "page": 50
+      },
+      {
+        "level": 4,
+        "title": "Método de Czuber",
+        "page": 50
+      },
+      {
+        "level": 4,
+        "title": "Propriedades da Moda",
+        "page": 51
+      },
+      {
+        "level": 3,
+        "title": "Influência da assimetria nas medidas de posição",
+        "page": 52
+      },
+      {
+        "level": 2,
+        "title": "Medidas de dispersão",
+        "page": 53
+      },
+      {
+        "level": 3,
+        "title": "Amplitude (A)",
+        "page": 54
+      },
+      {
+        "level": 4,
+        "title": "Propriedades da Amplitude",
+        "page": 55
+      },
+      {
+        "level": 3,
+        "title": "Variância",
+        "page": 55
+      },
+      {
+        "level": 4,
+        "title": "Propriedades da Variância",
+        "page": 56
+      },
+      {
+        "level": 3,
+        "title": "Desvio-padrão",
+        "page": 57
+      },
+      {
+        "level": 4,
+        "title": "Propriedades do Desvio-Padrão",
+        "page": 58
+      },
+      {
+        "level": 3,
+        "title": "Coeficiente de Variação (CV)",
+        "page": 58
+      },
+      {
+        "level": 4,
+        "title": "Propriedades do Coeficiente de Variação",
+        "page": 58
+      },
+      {
+        "level": 1,
+        "title": "PROBABILIDADE",
+        "page": 61
+      },
+      {
+        "level": 2,
+        "title": "Algumas definições úteis",
+        "page": 61
+      },
+      {
+        "level": 2,
+        "title": "Axiomas da Probabilidade",
+        "page": 62
+      },
+      {
+        "level": 3,
+        "title": "Propriedades derivadas dos axiomas",
+        "page": 62
+      },
+      {
+        "level": 2,
+        "title": "Definição clássica de probabilidade",
+        "page": 62
+      },
+      {
+        "level": 2,
+        "title": "Definição frequentista de probabilidade",
+        "page": 63
+      },
+      {
+        "level": 2,
+        "title": "Regra do ``E'' e regra do ``OU''",
+        "page": 64
+      },
+      {
+        "level": 3,
+        "title": "Regra do ``E''",
+        "page": 64
+      },
+      {
+        "level": 3,
+        "title": "Regra do ``OU''",
+        "page": 65
+      },
+      {
+        "level": 2,
+        "title": "Probabilidade condicional",
+        "page": 65
+      },
+      {
+        "level": 2,
+        "title": "Distribuições de probabilidade discretas",
+        "page": 66
+      },
+      {
+        "level": 3,
+        "title": "Definições úteis",
+        "page": 66
+      },
+      {
+        "level": 3,
+        "title": "Distribuição Binomial",
+        "page": 66
+      },
+      {
+        "level": 3,
+        "title": "Distribuição Poisson",
+        "page": 68
+      },
+      {
+        "level": 2,
+        "title": "Distribuições de probabilidades contínuas",
+        "page": 69
+      },
+      {
+        "level": 2,
+        "title": "Função Densidade de Probabilidade (fdp)",
+        "page": 71
+      },
+      {
+        "level": 3,
+        "title": "Propriedades da fdp",
+        "page": 71
+      },
+      {
+        "level": 3,
+        "title": "Distribuição Normal de probabilidades",
+        "page": 72
+      },
+      {
+        "level": 4,
+        "title": "Propriedades da Normal",
+        "page": 72
+      },
+      {
+        "level": 4,
+        "title": "Distribuição Normal padronizada (padrão ou zero-um)",
+        "page": 73
+      },
+      {
+        "level": 4,
+        "title": "Aproximação da Binomial à Normal",
+        "page": 76
+      },
+      {
+        "level": 4,
+        "title": "Aproximação da Poisson à Normal",
+        "page": 76
+      },
+      {
+        "level": 1,
+        "title": "AMOSTRAGEM",
+        "page": 79
+      },
+      {
+        "level": 2,
+        "title": "Amostragens não-aleatórias",
+        "page": 80
+      },
+      {
+        "level": 2,
+        "title": "Amostragens aleatórias",
+        "page": 80
+      },
+      {
+        "level": 3,
+        "title": "Amostragem aleatória simples (AAS)",
+        "page": 80
+      },
+      {
+        "level": 4,
+        "title": "Sorteio",
+        "page": 81
+      },
+      {
+        "level": 4,
+        "title": "Inconvenientes da AAS",
+        "page": 81
+      },
+      {
+        "level": 4,
+        "title": "Modelo Estatístico",
+        "page": 81
+      },
+      {
+        "level": 3,
+        "title": "Amostragem aleatória sistemática (AS)",
+        "page": 81
+      },
+      {
+        "level": 4,
+        "title": "Populações finitas",
+        "page": 81
+      },
+      {
+        "level": 4,
+        "title": "Populações muito grandes ou infinitas",
+        "page": 82
+      },
+      {
+        "level": 4,
+        "title": "Modelo Estatístico",
+        "page": 82
+      },
+      {
+        "level": 3,
+        "title": "Amostragem aleatória estratificada (AAE)",
+        "page": 82
+      },
+      {
+        "level": 4,
+        "title": "Modelo Estatístico",
+        "page": 82
+      },
+      {
+        "level": 3,
+        "title": "Amostragem aleatória por conglomerado (AAC)",
+        "page": 83
+      },
+      {
+        "level": 4,
+        "title": "Modelo Estatístico",
+        "page": 83
+      },
+      {
+        "level": 1,
+        "title": "INFERÊNCIA ESTATÍSTICA",
+        "page": 85
+      },
+      {
+        "level": 2,
+        "title": "Introdução",
+        "page": 85
+      },
+      {
+        "level": 2,
+        "title": "Teoria da Estimação",
+        "page": 86
+      },
+      {
+        "level": 3,
+        "title": "Estimação por ponto",
+        "page": 86
+      },
+      {
+        "level": 3,
+        "title": "Propriedades desejadas dos estimadores",
+        "page": 86
+      },
+      {
+        "level": 4,
+        "title": "Não-tendenciosidade",
+        "page": 87
+      },
+      {
+        "level": 4,
+        "title": "Variância mínima",
+        "page": 87
+      },
+      {
+        "level": 4,
+        "title": "Estimadores não-tendenciosos de variância mínima",
+        "page": 88
+      },
+      {
+        "level": 2,
+        "title": "Distribuições de amostragem",
+        "page": 88
+      },
+      {
+        "level": 3,
+        "title": "Distribuição da média amostral de populações normais",
+        "page": 88
+      },
+      {
+        "level": 4,
+        "title": "A distribuição t de Student",
+        "page": 89
+      },
+      {
+        "level": 4,
+        "title": "Propriedade da distribuição t de Student",
+        "page": 89
+      },
+      {
+        "level": 3,
+        "title": "Uso das distribuições de amostragem na Inferência Estatística",
+        "page": 90
+      },
+      {
+        "level": 3,
+        "title": "Estimação por intervalo",
+        "page": 91
+      },
+      {
+        "level": 4,
+        "title": "Fator de correção para populações finitas",
+        "page": 92
+      },
+      {
+        "level": 2,
+        "title": "Teoria da Decisão",
+        "page": 92
+      },
+      {
+        "level": 3,
+        "title": "Propriedades desejadas para os testes",
+        "page": 93
+      },
+      {
+        "level": 3,
+        "title": "Estrutura dos testes",
+        "page": 93
+      },
+      {
+        "level": 4,
+        "title": "Par de hipóteses",
+        "page": 93
+      },
+      {
+        "level": 4,
+        "title": "Estatística de teste",
+        "page": 94
+      },
+      {
+        "level": 4,
+        "title": "Regra de decisão",
+        "page": 95
+      },
+      {
+        "level": 4,
+        "title": "Conclusão",
+        "page": 98
+      },
+      {
+        "level": 3,
+        "title": "Contingências: tipos de erros e acertos possíveis",
+        "page": 99
+      },
+      {
+        "level": 2,
+        "title": "Inferência sobre uma população normal",
+        "page": 100
+      },
+      {
+        "level": 3,
+        "title": "Estimação da média populacional ()",
+        "page": 100
+      },
+      {
+        "level": 3,
+        "title": "Estimação de uma proporção populacional (p)",
+        "page": 105
+      },
+      {
+        "level": 3,
+        "title": "Estimação do Total populacional (T)",
+        "page": 107
+      },
+      {
+        "level": 4,
+        "title": "Estimação de T a partir da média ",
+        "page": 107
+      },
+      {
+        "level": 4,
+        "title": "Estimação de T a partir de uma proporção p",
+        "page": 108
+      },
+      {
+        "level": 3,
+        "title": "Teste para a média populacional ()",
+        "page": 108
+      },
+      {
+        "level": 4,
+        "title": "Par de hipóteses",
+        "page": 108
+      },
+      {
+        "level": 4,
+        "title": "Estatística de teste",
+        "page": 108
+      },
+      {
+        "level": 4,
+        "title": "Regra de decisão",
+        "page": 108
+      },
+      {
+        "level": 3,
+        "title": "Teste para uma proporção populacional (p)",
+        "page": 111
+      },
+      {
+        "level": 4,
+        "title": "Par de hipóteses",
+        "page": 111
+      },
+      {
+        "level": 4,
+        "title": "Estatística de teste",
+        "page": 111
+      },
+      {
+        "level": 4,
+        "title": "Regra de decisão",
+        "page": 111
+      },
+      {
+        "level": 3,
+        "title": "Estimação da variância populacional (2)",
+        "page": 113
+      },
+      {
+        "level": 3,
+        "title": "Estimação do desvio-padrão populacional ()",
+        "page": 113
+      },
+      {
+        "level": 2,
+        "title": "Inferência sobre duas populações normais",
+        "page": 114
+      },
+      {
+        "level": 3,
+        "title": "Teste de homogeneidade de variâncias",
+        "page": 114
+      },
+      {
+        "level": 4,
+        "title": "Distribuição F",
+        "page": 115
+      },
+      {
+        "level": 3,
+        "title": "Estimação da diferença entre duas medias (1 - 2)",
+        "page": 119
+      },
+      {
+        "level": 4,
+        "title": "Variâncias populacionais conhecidas",
+        "page": 119
+      },
+      {
+        "level": 4,
+        "title": "Variâncias populacionais desconhecidas",
+        "page": 119
+      },
+      {
+        "level": 3,
+        "title": "Teste sobre a diferença entre duas médias (1 - 2)",
+        "page": 120
+      },
+      {
+        "level": 4,
+        "title": "Par de hipóteses",
+        "page": 120
+      },
+      {
+        "level": 4,
+        "title": "Estatística de teste",
+        "page": 120
+      },
+      {
+        "level": 4,
+        "title": "Regra de decisão",
+        "page": 121
+      },
+      {
+        "level": 3,
+        "title": "O caso dos dados emparelhados",
+        "page": 124
+      },
+      {
+        "level": 4,
+        "title": "Estimação do efeito médio da intervenção (d)",
+        "page": 124
+      },
+      {
+        "level": 4,
+        "title": "Teste sobre o efeito médio da intervenção (d)",
+        "page": 126
+      },
+      {
+        "level": 1,
+        "title": "REGRESSÃO E CORRELAÇÃO",
+        "page": 129
+      },
+      {
+        "level": 2,
+        "title": "Regressão",
+        "page": 129
+      },
+      {
+        "level": 3,
+        "title": "Modelo Estatístico",
+        "page": 129
+      },
+      {
+        "level": 3,
+        "title": "Esperança Matemática",
+        "page": 130
+      },
+      {
+        "level": 3,
+        "title": "Método dos Quadrados Mínimos",
+        "page": 130
+      },
+      {
+        "level": 4,
+        "title": "Par de hipóteses",
+        "page": 132
+      },
+      {
+        "level": 4,
+        "title": "Estatística de teste",
+        "page": 132
+      },
+      {
+        "level": 4,
+        "title": "Regra de decisão",
+        "page": 133
+      },
+      {
+        "level": 2,
+        "title": "Correlação",
+        "page": 134
+      },
+      {
+        "level": 1,
+        "title": "REFERÊNCIAS",
+        "page": 141
+      },
+      {
+        "level": 1,
+        "title": "APÊNDICE A: EXERCÍCIOS PROPOSTOS",
+        "page": 143
+      },
+      {
+        "level": 1,
+        "title": "APÊNDICE B: TABELAS",
+        "page": 169
+      },
+      {
+        "level": 1,
+        "title": "SOBRE OS AUTORES",
+        "page": 195
+      }
+    ]
+  },
+  {
+    "filename": "CalculusVolume1-OP.pdf",
+    "page_count": 873,
+    "toc": [
+      {
+        "level": 1,
+        "title": "Preface",
+        "page": 9
+      },
+      {
+        "level": 2,
+        "title": "1. About OpenStax",
+        "page": 9
+      },
+      {
+        "level": 2,
+        "title": "2. About OpenStax's resources",
+        "page": 9
+      },
+      {
+        "level": 2,
+        "title": "3. About Calculus Volume 1",
+        "page": 9
+      },
+      {
+        "level": 2,
+        "title": "4. Additional resources",
+        "page": 11
+      },
+      {
+        "level": 2,
+        "title": "5. About the authors",
+        "page": 11
+      },
+      {
+        "level": 1,
+        "title": "Chapter 1. Functions and Graphs",
+        "page": 15
+      },
+      {
+        "level": 2,
+        "title": "1.1. Review of Functions*",
+        "page": 16
+      },
+      {
+        "level": 2,
+        "title": "1.2. Basic Classes of Functions*",
+        "page": 44
+      },
+      {
+        "level": 2,
+        "title": "1.3. Trigonometric Functions*",
+        "page": 70
+      },
+      {
+        "level": 2,
+        "title": "1.4. Inverse Functions*",
+        "page": 86
+      },
+      {
+        "level": 2,
+        "title": "1.5. Exponential and Logarithmic Functions*",
+        "page": 104
+      },
+      {
+        "level": 2,
+        "title": "Glossary",
+        "page": 125
+      },
+      {
+        "level": 1,
+        "title": "Chapter 2. Limits",
+        "page": 131
+      },
+      {
+        "level": 2,
+        "title": "2.1. A Preview of Calculus*",
+        "page": 132
+      },
+      {
+        "level": 2,
+        "title": "2.2. The Limit of a Function*",
+        "page": 143
+      },
+      {
+        "level": 2,
+        "title": "2.3. The Limit Laws*",
+        "page": 168
+      },
+      {
+        "level": 2,
+        "title": "2.4. Continuity*",
+        "page": 187
+      },
+      {
+        "level": 2,
+        "title": "2.5. The Precise Definition of a Limit*",
+        "page": 202
+      },
+      {
+        "level": 2,
+        "title": "Glossary",
+        "page": 216
+      },
+      {
+        "level": 1,
+        "title": "Chapter 3. Derivatives",
+        "page": 221
+      },
+      {
+        "level": 2,
+        "title": "3.1. Defining the Derivative*",
+        "page": 222
+      },
+      {
+        "level": 2,
+        "title": "3.2. The Derivative as a Function*",
+        "page": 240
+      },
+      {
+        "level": 2,
+        "title": "3.3. Differentiation Rules*",
+        "page": 255
+      },
+      {
+        "level": 2,
+        "title": "3.4. Derivatives as Rates of Change*",
+        "page": 274
+      },
+      {
+        "level": 2,
+        "title": "3.5. Derivatives of Trigonometric Functions*",
+        "page": 285
+      },
+      {
+        "level": 2,
+        "title": "3.6. The Chain Rule*",
+        "page": 295
+      },
+      {
+        "level": 2,
+        "title": "3.7. Derivatives of Inverse Functions*",
+        "page": 307
+      },
+      {
+        "level": 2,
+        "title": "3.8. Implicit Differentiation*",
+        "page": 317
+      },
+      {
+        "level": 2,
+        "title": "3.9. Derivatives of Exponential and Logarithmic Functions*",
+        "page": 327
+      },
+      {
+        "level": 2,
+        "title": "Glossary",
+        "page": 342
+      },
+      {
+        "level": 1,
+        "title": "Chapter 4. Applications of Derivatives",
+        "page": 349
+      },
+      {
+        "level": 2,
+        "title": "4.1. Related Rates*",
+        "page": 350
+      },
+      {
+        "level": 2,
+        "title": "4.2. Linear Approximations and Differentials*",
+        "page": 362
+      },
+      {
+        "level": 2,
+        "title": "4.3. Maxima and Minima*",
+        "page": 374
+      },
+      {
+        "level": 2,
+        "title": "4.4. The Mean Value Theorem*",
+        "page": 387
+      },
+      {
+        "level": 2,
+        "title": "4.5. Derivatives and the Shape of a Graph*",
+        "page": 398
+      },
+      {
+        "level": 2,
+        "title": "4.6. Limits at Infinity and Asymptotes*",
+        "page": 415
+      },
+      {
+        "level": 2,
+        "title": "4.7. Applied Optimization Problems*",
+        "page": 447
+      },
+      {
+        "level": 2,
+        "title": "4.8. L’Hôpital’s Rule*",
+        "page": 462
+      },
+      {
+        "level": 2,
+        "title": "4.9. Newton’s Method*",
+        "page": 480
+      },
+      {
+        "level": 2,
+        "title": "4.10. Antiderivatives*",
+        "page": 493
+      },
+      {
+        "level": 2,
+        "title": "Glossary",
+        "page": 507
+      },
+      {
+        "level": 1,
+        "title": "Chapter 5. Integration",
+        "page": 515
+      },
+      {
+        "level": 2,
+        "title": "5.1. Approximating Areas*",
+        "page": 516
+      },
+      {
+        "level": 2,
+        "title": "5.2. The Definite Integral*",
+        "page": 537
+      },
+      {
+        "level": 2,
+        "title": "5.3. The Fundamental Theorem of Calculus*",
+        "page": 557
+      },
+      {
+        "level": 2,
+        "title": "5.4. Integration Formulas and the Net Change Theorem*",
+        "page": 574
+      },
+      {
+        "level": 2,
+        "title": "5.5. Substitution*",
+        "page": 592
+      },
+      {
+        "level": 2,
+        "title": "5.6. Integrals Involving Exponential and Logarithmic Functions*",
+        "page": 603
+      },
+      {
+        "level": 2,
+        "title": "5.7. Integrals Resulting in Inverse Trigonometric Functions*",
+        "page": 616
+      },
+      {
+        "level": 2,
+        "title": "Glossary",
+        "page": 624
+      },
+      {
+        "level": 1,
+        "title": "Chapter 6. Applications of Integration",
+        "page": 631
+      },
+      {
+        "level": 2,
+        "title": "6.1. Areas between Curves*",
+        "page": 632
+      },
+      {
+        "level": 2,
+        "title": "6.2. Determining Volumes by Slicing*",
+        "page": 644
+      },
+      {
+        "level": 2,
+        "title": "6.3. Volumes of Revolution: Cylindrical Shells*",
+        "page": 664
+      },
+      {
+        "level": 2,
+        "title": "6.4. Arc Length of a Curve and Surface Area*",
+        "page": 679
+      },
+      {
+        "level": 2,
+        "title": "6.5. Physical Applications*",
+        "page": 693
+      },
+      {
+        "level": 2,
+        "title": "6.6. Moments and Centers of Mass*",
+        "page": 711
+      },
+      {
+        "level": 2,
+        "title": "6.7. Integrals, Exponential Functions, and Logarithms*",
+        "page": 729
+      },
+      {
+        "level": 2,
+        "title": "6.8. Exponential Growth and Decay*",
+        "page": 742
+      },
+      {
+        "level": 2,
+        "title": "6.9. Calculus of the Hyperbolic Functions*",
+        "page": 753
+      },
+      {
+        "level": 2,
+        "title": "Glossary",
+        "page": 764
+      },
+      {
+        "level": 1,
+        "title": "Appendix A. Table of Integrals*",
+        "page": 771
+      },
+      {
+        "level": 2,
+        "title": "A.1. Basic Integrals",
+        "page": 771
+      },
+      {
+        "level": 2,
+        "title": "A.2. Trigonometric Integrals",
+        "page": 771
+      },
+      {
+        "level": 2,
+        "title": "A.3. Exponential and Logarithmic Integrals",
+        "page": 773
+      },
+      {
+        "level": 2,
+        "title": "A.4. Hyperbolic Integrals",
+        "page": 773
+      },
+      {
+        "level": 2,
+        "title": "A.5. Inverse Trigonometric Integrals",
+        "page": 773
+      },
+      {
+        "level": 2,
+        "title": "A.6. Integrals Involving a2 + u2, a > 0",
+        "page": 774
+      },
+      {
+        "level": 2,
+        "title": "A.7. Integrals Involving u2 − a2, a > 0",
+        "page": 774
+      },
+      {
+        "level": 2,
+        "title": "A.8. Integrals Involving a2 − u2, a > 0",
+        "page": 775
+      },
+      {
+        "level": 2,
+        "title": "A.9. Integrals Involving 2au − u2, a > 0",
+        "page": 775
+      },
+      {
+        "level": 2,
+        "title": "A.10. Integrals Involving a + bu, a ≠ 0",
+        "page": 776
+      },
+      {
+        "level": 1,
+        "title": "Appendix B. Table of Derivatives*",
+        "page": 777
+      },
+      {
+        "level": 2,
+        "title": "B.1. General Formulas",
+        "page": 777
+      },
+      {
+        "level": 2,
+        "title": "B.2. Trigonometric Functions",
+        "page": 777
+      },
+      {
+        "level": 2,
+        "title": "B.3. Inverse Trigonometric Functions",
+        "page": 777
+      },
+      {
+        "level": 2,
+        "title": "B.4. Exponential and Logarithmic Functions",
+        "page": 778
+      },
+      {
+        "level": 2,
+        "title": "B.5. Hyperbolic Functions",
+        "page": 778
+      },
+      {
+        "level": 2,
+        "title": "B.6. Inverse Hyperbolic Functions",
+        "page": 778
+      },
+      {
+        "level": 1,
+        "title": "Appendix C. Review of Pre-Calculus*",
+        "page": 779
+      },
+      {
+        "level": 2,
+        "title": "C.1. Formulas from Geometry",
+        "page": 779
+      },
+      {
+        "level": 2,
+        "title": "C.2. Formulas from Algebra",
+        "page": 779
+      },
+      {
+        "level": 2,
+        "title": "C.3. Formulas from Trigonometry",
+        "page": 780
+      },
+      {
+        "level": 1,
+        "title": "Solutions",
+        "page": 783
+      },
+      {
+        "level": 2,
+        "title": "Chapter 1",
+        "page": 783
+      },
+      {
+        "level": 2,
+        "title": "Chapter 2",
+        "page": 797
+      },
+      {
+        "level": 2,
+        "title": "Chapter 3",
+        "page": 805
+      },
+      {
+        "level": 2,
+        "title": "Chapter 4",
+        "page": 822
+      },
+      {
+        "level": 2,
+        "title": "Chapter 5",
+        "page": 834
+      },
+      {
+        "level": 2,
+        "title": "Chapter 6",
+        "page": 851
+      },
+      {
+        "level": 2,
+        "title": "Index",
+        "page": 871
+      },
+      {
+        "level": 1,
+        "title": "CalculusVolume1.pdf",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "title": "Blank Page",
+        "page": 2
+      }
+    ]
+  },
+  {
+    "filename": "Grafos-versao-final.pdf",
+    "page_count": 171,
+    "toc": [
+      {
+        "level": 1,
+        "title": "Sumário",
+        "page": 5
+      },
+      {
+        "level": 1,
+        "title": "Prefácio",
+        "page": 8
+      },
+      {
+        "level": 1,
+        "title": "Conceitos Fundamentais",
+        "page": 10
+      },
+      {
+        "level": 2,
+        "title": "Introdução",
+        "page": 10
+      },
+      {
+        "level": 2,
+        "title": "Grafos",
+        "page": 11
+      },
+      {
+        "level": 2,
+        "title": "Grafos dirigidos",
+        "page": 13
+      },
+      {
+        "level": 2,
+        "title": "Laços e arestas paralelas",
+        "page": 15
+      },
+      {
+        "level": 2,
+        "title": "Parâmetros quantitativos",
+        "page": 16
+      },
+      {
+        "level": 2,
+        "title": "Grafos rotulados e não-rotulados",
+        "page": 18
+      },
+      {
+        "level": 2,
+        "title": "Isomorfismo",
+        "page": 19
+      },
+      {
+        "level": 2,
+        "title": "Subgrafos",
+        "page": 20
+      },
+      {
+        "level": 2,
+        "title": "Classes de grafos",
+        "page": 21
+      },
+      {
+        "level": 2,
+        "title": "Percursos, trilhas e caminhos",
+        "page": 25
+      },
+      {
+        "level": 2,
+        "title": "Aplicações",
+        "page": 28
+      },
+      {
+        "level": 3,
+        "title": "Labirintos",
+        "page": 28
+      },
+      {
+        "level": 3,
+        "title": "Problema dos 4 cubos",
+        "page": 28
+      },
+      {
+        "level": 2,
+        "title": "Exercícios",
+        "page": 32
+      },
+      {
+        "level": 1,
+        "title": "Representação de grafos",
+        "page": 44
+      },
+      {
+        "level": 2,
+        "title": "Introdução",
+        "page": 44
+      },
+      {
+        "level": 2,
+        "title": "Operações em estruturas de dados de Grafos",
+        "page": 45
+      },
+      {
+        "level": 2,
+        "title": "Listas de arestas",
+        "page": 45
+      },
+      {
+        "level": 2,
+        "title": "Listas de adjacência",
+        "page": 47
+      },
+      {
+        "level": 2,
+        "title": "Mapas de adjacência",
+        "page": 49
+      },
+      {
+        "level": 2,
+        "title": "Matrizes de adjacência",
+        "page": 50
+      },
+      {
+        "level": 2,
+        "title": "Exercícios",
+        "page": 52
+      },
+      {
+        "level": 1,
+        "title": "Busca básica em grafos",
+        "page": 56
+      },
+      {
+        "level": 2,
+        "title": "Introdução",
+        "page": 56
+      },
+      {
+        "level": 2,
+        "title": "Busca em largura",
+        "page": 57
+      },
+      {
+        "level": 3,
+        "title": "O algoritmo de busca em largura",
+        "page": 58
+      },
+      {
+        "level": 2,
+        "title": "Busca em profundidade",
+        "page": 60
+      },
+      {
+        "level": 3,
+        "title": "Busca em profundidade com um vértice origem",
+        "page": 60
+      },
+      {
+        "level": 3,
+        "title": "Busca em profundidade com várias origens",
+        "page": 61
+      },
+      {
+        "level": 2,
+        "title": "Percorrendo a árvore de busca",
+        "page": 62
+      },
+      {
+        "level": 2,
+        "title": "Exemplos de aplicação de busca",
+        "page": 63
+      },
+      {
+        "level": 3,
+        "title": "Estudo de caso: busca em grafos de estados",
+        "page": 63
+      },
+      {
+        "level": 3,
+        "title": "Estudo de caso: ordenação topológica",
+        "page": 64
+      },
+      {
+        "level": 2,
+        "title": "Exercícios",
+        "page": 67
+      },
+      {
+        "level": 1,
+        "title": "Conexidade",
+        "page": 72
+      },
+      {
+        "level": 2,
+        "title": "Introdução",
+        "page": 72
+      },
+      {
+        "level": 2,
+        "title": "Definições iniciais",
+        "page": 72
+      },
+      {
+        "level": 2,
+        "title": "Conexidade com algoritmo de busca",
+        "page": 77
+      },
+      {
+        "level": 2,
+        "title": "Conexidade por fusão de vértices",
+        "page": 78
+      },
+      {
+        "level": 2,
+        "title": "Conexidade por conjuntos disjuntos",
+        "page": 80
+      },
+      {
+        "level": 2,
+        "title": "Conexidade em grafos dirigidos",
+        "page": 84
+      },
+      {
+        "level": 2,
+        "title": "Exercícios",
+        "page": 87
+      },
+      {
+        "level": 1,
+        "title": "Grafos Eulerianos e Hamiltonianos",
+        "page": 90
+      },
+      {
+        "level": 2,
+        "title": "Problema do Explorador e Problema do Turista",
+        "page": 90
+      },
+      {
+        "level": 2,
+        "title": "Grafos e Ciclos Eulerianos",
+        "page": 91
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo de Fleury",
+        "page": 94
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo de Hierholzer",
+        "page": 95
+      },
+      {
+        "level": 3,
+        "title": "Estudo de caso: dominó",
+        "page": 99
+      },
+      {
+        "level": 2,
+        "title": "Grafos e Ciclos Hamiltonianos",
+        "page": 101
+      },
+      {
+        "level": 3,
+        "title": "Estudo de caso: xadrez",
+        "page": 103
+      },
+      {
+        "level": 3,
+        "title": "Estudo de caso: Gray codes",
+        "page": 105
+      },
+      {
+        "level": 2,
+        "title": "Exercícios",
+        "page": 107
+      },
+      {
+        "level": 1,
+        "title": "Árvores",
+        "page": 114
+      },
+      {
+        "level": 2,
+        "title": "Caracterização de árvores",
+        "page": 114
+      },
+      {
+        "level": 2,
+        "title": "Árvores geradoras",
+        "page": 118
+      },
+      {
+        "level": 3,
+        "title": "Estudo de caso: rigidez de treliças planas",
+        "page": 119
+      },
+      {
+        "level": 2,
+        "title": "Grafos valorados",
+        "page": 122
+      },
+      {
+        "level": 2,
+        "title": "Problema de árvore geradora de custo mínimo",
+        "page": 123
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo de Prim",
+        "page": 124
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo de Kruskal",
+        "page": 126
+      },
+      {
+        "level": 2,
+        "title": "Exercícios",
+        "page": 131
+      },
+      {
+        "level": 1,
+        "title": "Caminho mínimo",
+        "page": 136
+      },
+      {
+        "level": 2,
+        "title": "Problema do caminho mínimo",
+        "page": 136
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo de Dijkstra",
+        "page": 136
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo de Floyd",
+        "page": 138
+      },
+      {
+        "level": 3,
+        "title": "Imprimindo caminhos na matriz de roteamento",
+        "page": 142
+      },
+      {
+        "level": 2,
+        "title": "Problema do Carteiro Chinês",
+        "page": 142
+      },
+      {
+        "level": 3,
+        "title": "Eulerização de grafos",
+        "page": 143
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo para o problema do carteiro chinês",
+        "page": 144
+      },
+      {
+        "level": 2,
+        "title": "Problema do Caixeiro Viajante",
+        "page": 147
+      },
+      {
+        "level": 3,
+        "title": "Algoritmo força bruta",
+        "page": 147
+      },
+      {
+        "level": 3,
+        "title": "Heurística do vizinho mais próximo",
+        "page": 148
+      },
+      {
+        "level": 3,
+        "title": "Heurística da desigualdade do triângulo",
+        "page": 150
+      },
+      {
+        "level": 3,
+        "title": "Aplicações do problema do caixeiro viajante",
+        "page": 151
+      },
+      {
+        "level": 2,
+        "title": "Exercícios",
+        "page": 153
+      },
+      {
+        "level": 1,
+        "title": "Lista de ilustrações",
+        "page": 156
+      },
+      {
+        "level": 1,
+        "title": "Lista de ilustrações",
+        "page": 156
+      },
+      {
+        "level": 1,
+        "title": "Lista de quadros",
+        "page": 160
+      },
+      {
+        "level": 1,
+        "title": "Lista de quadros",
+        "page": 160
+      },
+      {
+        "level": 1,
+        "title": "Referências",
+        "page": 162
+      },
+      {
+        "level": 1,
+        "title": "Índice",
+        "page": 166
+      }
+    ]
+  },
+  {
+    "filename": "university-physics-volume-1_-_WEB.pdf",
+    "page_count": 959,
+    "toc": [
+      {
+        "level": 1,
+        "title": "Contents",
+        "page": 7
+      },
+      {
+        "level": 1,
+        "title": "Preface",
+        "page": 13
+      },
+      {
+        "level": 2,
+        "title": "About OpenStax",
+        "page": 13
+      },
+      {
+        "level": 1,
+        "title": "Chapter 1 Units and Measurement",
+        "page": 17
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 17
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 17
+      },
+      {
+        "level": 2,
+        "title": "1.1 The Scope and Scale of Physics",
+        "page": 18
+      },
+      {
+        "level": 2,
+        "title": "1.2 Units and Standards",
+        "page": 24
+      },
+      {
+        "level": 2,
+        "title": "1.3 Unit Conversion",
+        "page": 30
+      },
+      {
+        "level": 2,
+        "title": "1.4 Dimensional Analysis",
+        "page": 32
+      },
+      {
+        "level": 2,
+        "title": "1.5 Estimates and Fermi Calculations",
+        "page": 35
+      },
+      {
+        "level": 2,
+        "title": "1.6 Significant Figures",
+        "page": 38
+      },
+      {
+        "level": 2,
+        "title": "1.7 Solving Problems in Physics",
+        "page": 42
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 45
+      },
+      {
+        "level": 1,
+        "title": "Chapter 2 Vectors",
+        "page": 53
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 53
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 53
+      },
+      {
+        "level": 2,
+        "title": "2.1 Scalars and Vectors",
+        "page": 54
+      },
+      {
+        "level": 2,
+        "title": "2.2 Coordinate Systems and Components of a Vector",
+        "page": 65
+      },
+      {
+        "level": 2,
+        "title": "2.3 Algebra of Vectors",
+        "page": 75
+      },
+      {
+        "level": 2,
+        "title": "2.4 Products of Vectors",
+        "page": 84
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 96
+      },
+      {
+        "level": 1,
+        "title": "Chapter 3 Motion Along a Straight Line",
+        "page": 109
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 109
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 109
+      },
+      {
+        "level": 2,
+        "title": "3.1 Position, Displacement, and Average Velocity",
+        "page": 110
+      },
+      {
+        "level": 2,
+        "title": "3.2 Instantaneous Velocity and Speed",
+        "page": 114
+      },
+      {
+        "level": 2,
+        "title": "3.3 Average and Instantaneous Acceleration",
+        "page": 119
+      },
+      {
+        "level": 2,
+        "title": "3.4 Motion with Constant Acceleration",
+        "page": 127
+      },
+      {
+        "level": 2,
+        "title": "3.5 Free Fall",
+        "page": 138
+      },
+      {
+        "level": 2,
+        "title": "3.6 Finding Velocity and Displacement from Acceleration",
+        "page": 144
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 148
+      },
+      {
+        "level": 1,
+        "title": "Chapter 4 Motion in Two and Three Dimensions",
+        "page": 159
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 159
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 159
+      },
+      {
+        "level": 2,
+        "title": "4.1 Displacement and Velocity Vectors",
+        "page": 160
+      },
+      {
+        "level": 2,
+        "title": "4.2 Acceleration Vector",
+        "page": 167
+      },
+      {
+        "level": 2,
+        "title": "4.3 Projectile Motion",
+        "page": 172
+      },
+      {
+        "level": 2,
+        "title": "4.4 Uniform and Nonuniform Circular Motion",
+        "page": 182
+      },
+      {
+        "level": 2,
+        "title": "4.5 Relative Motion in One and Two Dimensions",
+        "page": 189
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 194
+      },
+      {
+        "level": 1,
+        "title": "Chapter 5 Newton's Laws of Motion",
+        "page": 205
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 205
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 205
+      },
+      {
+        "level": 2,
+        "title": "5.1 Forces",
+        "page": 206
+      },
+      {
+        "level": 2,
+        "title": "5.2 Newton's First Law",
+        "page": 210
+      },
+      {
+        "level": 2,
+        "title": "5.3 Newton's Second Law",
+        "page": 214
+      },
+      {
+        "level": 2,
+        "title": "5.4 Mass and Weight",
+        "page": 224
+      },
+      {
+        "level": 2,
+        "title": "5.5 Newton’s Third Law",
+        "page": 226
+      },
+      {
+        "level": 2,
+        "title": "5.6 Common Forces",
+        "page": 232
+      },
+      {
+        "level": 2,
+        "title": "5.7 Drawing Free-Body Diagrams",
+        "page": 242
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 247
+      },
+      {
+        "level": 1,
+        "title": "Chapter 6 Applications of Newton's Laws",
+        "page": 261
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 261
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 261
+      },
+      {
+        "level": 2,
+        "title": "6.1 Solving Problems with Newton’s Laws",
+        "page": 261
+      },
+      {
+        "level": 2,
+        "title": "6.2 Friction",
+        "page": 277
+      },
+      {
+        "level": 2,
+        "title": "6.3 Centripetal Force",
+        "page": 288
+      },
+      {
+        "level": 2,
+        "title": "6.4 Drag Force and Terminal Speed",
+        "page": 296
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 305
+      },
+      {
+        "level": 1,
+        "title": "Chapter 7 Work and Kinetic Energy",
+        "page": 323
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 323
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 323
+      },
+      {
+        "level": 2,
+        "title": "7.1 Work",
+        "page": 324
+      },
+      {
+        "level": 2,
+        "title": "7.2 Kinetic Energy",
+        "page": 332
+      },
+      {
+        "level": 2,
+        "title": "7.3 Work-Energy Theorem",
+        "page": 335
+      },
+      {
+        "level": 2,
+        "title": "7.4 Power",
+        "page": 340
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 343
+      },
+      {
+        "level": 1,
+        "title": "Chapter 8 Potential Energy and Conservation of Energy",
+        "page": 353
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 353
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 353
+      },
+      {
+        "level": 2,
+        "title": "8.1 Potential Energy of a System",
+        "page": 353
+      },
+      {
+        "level": 2,
+        "title": "8.2 Conservative and Non-Conservative Forces",
+        "page": 362
+      },
+      {
+        "level": 2,
+        "title": "8.3 Conservation of Energy",
+        "page": 365
+      },
+      {
+        "level": 2,
+        "title": "8.4 Potential Energy Diagrams and Stability",
+        "page": 371
+      },
+      {
+        "level": 2,
+        "title": "8.5 Sources of Energy",
+        "page": 375
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 379
+      },
+      {
+        "level": 1,
+        "title": "Chapter 9 Linear Momentum and Collisions",
+        "page": 391
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 391
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 391
+      },
+      {
+        "level": 2,
+        "title": "9.1 Linear Momentum",
+        "page": 392
+      },
+      {
+        "level": 2,
+        "title": "9.2 Impulse and Collisions",
+        "page": 394
+      },
+      {
+        "level": 2,
+        "title": "9.3 Conservation of Linear Momentum",
+        "page": 407
+      },
+      {
+        "level": 2,
+        "title": "9.4 Types of Collisions",
+        "page": 417
+      },
+      {
+        "level": 2,
+        "title": "9.5 Collisions in Multiple Dimensions",
+        "page": 424
+      },
+      {
+        "level": 2,
+        "title": "9.6 Center of Mass",
+        "page": 431
+      },
+      {
+        "level": 2,
+        "title": "9.7 Rocket Propulsion",
+        "page": 446
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 451
+      },
+      {
+        "level": 1,
+        "title": "Chapter 10 Fixed-Axis Rotation",
+        "page": 463
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 463
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 463
+      },
+      {
+        "level": 2,
+        "title": "10.1 Rotational Variables",
+        "page": 464
+      },
+      {
+        "level": 2,
+        "title": "10.2 Rotation with Constant Angular Acceleration",
+        "page": 472
+      },
+      {
+        "level": 2,
+        "title": "10.3 Relating Angular and Translational Quantities",
+        "page": 477
+      },
+      {
+        "level": 2,
+        "title": "10.4 Moment of Inertia and Rotational Kinetic Energy",
+        "page": 481
+      },
+      {
+        "level": 2,
+        "title": "10.5 Calculating Moments of Inertia",
+        "page": 489
+      },
+      {
+        "level": 2,
+        "title": "10.6 Torque",
+        "page": 497
+      },
+      {
+        "level": 2,
+        "title": "10.7 Newton’s Second Law for Rotation",
+        "page": 502
+      },
+      {
+        "level": 2,
+        "title": "10.8 Work and Power for Rotational Motion",
+        "page": 506
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 512
+      },
+      {
+        "level": 1,
+        "title": "Chapter 11 Angular Momentum",
+        "page": 527
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 527
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 527
+      },
+      {
+        "level": 2,
+        "title": "11.1 Rolling Motion",
+        "page": 528
+      },
+      {
+        "level": 2,
+        "title": "11.2 Angular Momentum",
+        "page": 535
+      },
+      {
+        "level": 2,
+        "title": "11.3 Conservation of Angular Momentum",
+        "page": 543
+      },
+      {
+        "level": 2,
+        "title": "11.4 Precession of a Gyroscope",
+        "page": 549
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 554
+      },
+      {
+        "level": 1,
+        "title": "Chapter 12 Static Equilibrium and Elasticity",
+        "page": 565
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 565
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 565
+      },
+      {
+        "level": 2,
+        "title": "12.1 Conditions for Static Equilibrium",
+        "page": 566
+      },
+      {
+        "level": 2,
+        "title": "12.2 Examples of Static Equilibrium",
+        "page": 574
+      },
+      {
+        "level": 2,
+        "title": "12.3 Stress, Strain, and Elastic Modulus",
+        "page": 587
+      },
+      {
+        "level": 2,
+        "title": "12.4 Elasticity and Plasticity",
+        "page": 597
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 599
+      },
+      {
+        "level": 1,
+        "title": "Chapter 13 Gravitation",
+        "page": 611
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 611
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 611
+      },
+      {
+        "level": 2,
+        "title": "13.1 Newton's Law of Universal Gravitation",
+        "page": 611
+      },
+      {
+        "level": 2,
+        "title": "13.2 Gravitation Near Earth's Surface",
+        "page": 617
+      },
+      {
+        "level": 2,
+        "title": "13.3 Gravitational Potential Energy and Total Energy",
+        "page": 624
+      },
+      {
+        "level": 2,
+        "title": "13.4 Satellite Orbits and Energy",
+        "page": 629
+      },
+      {
+        "level": 2,
+        "title": "13.5 Kepler's Laws of Planetary Motion",
+        "page": 636
+      },
+      {
+        "level": 2,
+        "title": "13.6 Tidal Forces",
+        "page": 642
+      },
+      {
+        "level": 2,
+        "title": "13.7 Einstein's Theory of Gravity",
+        "page": 648
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 656
+      },
+      {
+        "level": 1,
+        "title": "Chapter 14 Fluid Mechanics",
+        "page": 665
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 665
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 665
+      },
+      {
+        "level": 2,
+        "title": "14.1 Fluids, Density, and Pressure",
+        "page": 666
+      },
+      {
+        "level": 2,
+        "title": "14.2 Measuring Pressure",
+        "page": 677
+      },
+      {
+        "level": 2,
+        "title": "14.3 Pascal's Principle and Hydraulics",
+        "page": 681
+      },
+      {
+        "level": 2,
+        "title": "14.4 Archimedes’ Principle and Buoyancy",
+        "page": 686
+      },
+      {
+        "level": 2,
+        "title": "14.5 Fluid Dynamics",
+        "page": 690
+      },
+      {
+        "level": 2,
+        "title": "14.6 Bernoulli’s Equation",
+        "page": 694
+      },
+      {
+        "level": 2,
+        "title": "14.7 Viscosity and Turbulence",
+        "page": 700
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 708
+      },
+      {
+        "level": 1,
+        "title": "Chapter 15 Oscillations",
+        "page": 721
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 721
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 721
+      },
+      {
+        "level": 2,
+        "title": "15.1 Simple Harmonic Motion",
+        "page": 722
+      },
+      {
+        "level": 2,
+        "title": "15.2 Energy in Simple Harmonic Motion",
+        "page": 730
+      },
+      {
+        "level": 2,
+        "title": "15.3 Comparing Simple Harmonic Motion and Circular Motion",
+        "page": 737
+      },
+      {
+        "level": 2,
+        "title": "15.4 Pendulums",
+        "page": 740
+      },
+      {
+        "level": 2,
+        "title": "15.5 Damped Oscillations",
+        "page": 746
+      },
+      {
+        "level": 2,
+        "title": "15.6 Forced Oscillations",
+        "page": 749
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 754
+      },
+      {
+        "level": 1,
+        "title": "Chapter 16 Waves",
+        "page": 763
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 763
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 763
+      },
+      {
+        "level": 2,
+        "title": "16.1 Traveling Waves",
+        "page": 764
+      },
+      {
+        "level": 2,
+        "title": "16.2 Mathematics of Waves",
+        "page": 769
+      },
+      {
+        "level": 2,
+        "title": "16.3 Wave Speed on a Stretched String",
+        "page": 778
+      },
+      {
+        "level": 2,
+        "title": "16.4 Energy and Power of a Wave",
+        "page": 781
+      },
+      {
+        "level": 2,
+        "title": "16.5 Interference of Waves",
+        "page": 786
+      },
+      {
+        "level": 2,
+        "title": "16.6 Standing Waves and Resonance",
+        "page": 793
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 803
+      },
+      {
+        "level": 1,
+        "title": "Chapter 17 Sound",
+        "page": 819
+      },
+      {
+        "level": 2,
+        "title": "Chapter Outline",
+        "page": 819
+      },
+      {
+        "level": 2,
+        "title": "Introduction",
+        "page": 819
+      },
+      {
+        "level": 2,
+        "title": "17.1 Sound Waves",
+        "page": 820
+      },
+      {
+        "level": 2,
+        "title": "17.2 Speed of Sound",
+        "page": 822
+      },
+      {
+        "level": 2,
+        "title": "17.3 Sound Intensity",
+        "page": 830
+      },
+      {
+        "level": 2,
+        "title": "17.4 Normal Modes of a Standing Sound Wave",
+        "page": 838
+      },
+      {
+        "level": 2,
+        "title": "17.5 Sources of Musical Sound",
+        "page": 846
+      },
+      {
+        "level": 2,
+        "title": "17.6 Beats",
+        "page": 850
+      },
+      {
+        "level": 2,
+        "title": "17.7 The Doppler Effect",
+        "page": 852
+      },
+      {
+        "level": 2,
+        "title": "17.8 Shock Waves",
+        "page": 858
+      },
+      {
+        "level": 2,
+        "title": "Chapter Review",
+        "page": 862
+      },
+      {
+        "level": 1,
+        "title": "Appendix A Units",
+        "page": 875
+      },
+      {
+        "level": 1,
+        "title": "Appendix B Conversion Factors",
+        "page": 879
+      },
+      {
+        "level": 1,
+        "title": "Appendix C Fundamental Constants",
+        "page": 883
+      },
+      {
+        "level": 1,
+        "title": "Appendix D Astronomical Data",
+        "page": 885
+      },
+      {
+        "level": 1,
+        "title": "Appendix E Mathematical Formulas",
+        "page": 887
+      },
+      {
+        "level": 1,
+        "title": "Appendix F Chemistry",
+        "page": 891
+      },
+      {
+        "level": 1,
+        "title": "Appendix G The Greek Alphabet",
+        "page": 893
+      },
+      {
+        "level": 1,
+        "title": "Answer Key",
+        "page": 895
+      },
+      {
+        "level": 2,
+        "title": "Chapter 1",
+        "page": 895
+      },
+      {
+        "level": 2,
+        "title": "Chapter 2",
+        "page": 896
+      },
+      {
+        "level": 2,
+        "title": "Chapter 3",
+        "page": 899
+      },
+      {
+        "level": 2,
+        "title": "Chapter 4",
+        "page": 905
+      },
+      {
+        "level": 2,
+        "title": "Chapter 5",
+        "page": 910
+      },
+      {
+        "level": 2,
+        "title": "Chapter 6",
+        "page": 915
+      },
+      {
+        "level": 2,
+        "title": "Chapter 7",
+        "page": 918
+      },
+      {
+        "level": 2,
+        "title": "Chapter 8",
+        "page": 919
+      },
+      {
+        "level": 2,
+        "title": "Chapter 9",
+        "page": 921
+      },
+      {
+        "level": 2,
+        "title": "Chapter 10",
+        "page": 925
+      },
+      {
+        "level": 2,
+        "title": "Chapter 11",
+        "page": 928
+      },
+      {
+        "level": 2,
+        "title": "Chapter 12",
+        "page": 932
+      },
+      {
+        "level": 2,
+        "title": "Chapter 13",
+        "page": 934
+      },
+      {
+        "level": 2,
+        "title": "Chapter 14",
+        "page": 937
+      },
+      {
+        "level": 2,
+        "title": "Chapter 15",
+        "page": 940
+      },
+      {
+        "level": 2,
+        "title": "Chapter 16",
+        "page": 941
+      },
+      {
+        "level": 2,
+        "title": "Chapter 17",
+        "page": 947
+      },
+      {
+        "level": 1,
+        "title": "Index",
+        "page": 955
+      },
+      {
+        "level": 1,
+        "title": "UniversityPhysicsVolume1.pdf",
+        "page": 1
+      },
+      {
+        "level": 2,
+        "title": "Blank Page",
+        "page": 2
+      }
+    ]
+  },
+  {
+    "filename": "Álgebra linear_ Análise_ Espaços Vetoriais_ Cônicas e Quádricas v. 2. (E-book).pdf",
+    "page_count": 110,
+    "toc": [
+      {
+        "level": 1,
+        "title": "Marcador 1",
+        "page": 6
+      }
+    ]
+  }
+]
