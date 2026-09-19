@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": "statistics_q001",
+    "document": "statistics_001",
+    "question": "O que caracteriza a Estatística Descritiva e qual é seu objetivo?",
+    "question_type": "text",
+    "difficulty": "easy",
+    "evaluation_category": "text_retrieval",
+    "expected_evidence": {
+      "source_page": 1,
+      "page": 37,
+      "component_type": "plain_text",
+      "description": "Introdução do capítulo de Estatística Descritiva apresentando seu objetivo de descrever dados."
+    }
+  },
+  {
+    "id": "statistics_q002",
+    "document": "statistics_001",
+    "question": "Como a mediana é definida em relação à posição dos dados?",
+    "question_type": "text",
+    "difficulty": "easy",
+    "evaluation_category": "text_retrieval",
+    "expected_evidence": {
+      "source_page": 13,
+      "page": 49,
+      "component_type": "plain_text",
+      "description": "Definição de mediana apresentada na seção de medidas de posição."
+    }
+  },
+  {
+    "id": "statistics_q003",
+    "document": "statistics_001",
+    "question": "Qual figura representa distribuições com diferentes relações entre média, moda e mediana?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 17,
+      "page": 53,
+      "component_type": "figure",
+      "description": "Figuras representando distribuições assimétricas e simétricas com posição relativa entre média, moda e mediana."
+    }
+  },
+  {
+    "id": "statistics_q004",
+    "document": "statistics_001",
+    "question": "Qual representação apresenta a curva Normal padrão e a distribuição t com diferentes graus de liberdade?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 54,
+      "page": 90,
+      "component_type": "figure",
+      "description": "Figura comparando a curva Normal padrão e curvas t com diferentes graus de liberdade."
+    }
+  },
+  {
+    "id": "statistics_q005",
+    "document": "statistics_001",
+    "question": "Quais informações são apresentadas na tabela de distribuição de frequências do peso observado em potinhos de canela em pó?",
+    "question_type": "table",
+    "difficulty": "medium",
+    "evaluation_category": "table_retrieval",
+    "expected_evidence": {
+      "source_page": 8,
+      "page": 44,
+      "component_type": "table",
+      "description": "Tabela contendo distribuição de frequências absoluta, relativa e percentual."
+    }
+  },
+  {
+    "id": "statistics_q006",
+    "document": "statistics_001",
+    "question": "O que a figura de correlação demonstra sobre possíveis relacionamentos entre variáveis?",
+    "question_type": "multimodal",
+    "difficulty": "hard",
+    "evaluation_category": "multimodal_reasoning",
+    "expected_evidence": {
+      "source_page": 99,
+      "page": 135,
+      "component_type": "figure",
+      "description": "Figura apresentando exemplos de variáveis não correlacionadas, positivamente correlacionadas, negativamente correlacionadas e relacionamento quadrático."
+    }
+  }
+]

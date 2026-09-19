@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "id": "calculus_q001",
+    "document": "calculus_001",
+    "question": "Qual figura apresenta a aproximação da área sob uma curva utilizando retângulos?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 8,
+      "page": 8,
+      "component_type": "figure",
+      "description": "Figura 2.10 mostrando a estimativa da área da região sob a curva utilizando três retângulos."
+    },
+    "source_page": 8
+  },
+  {
+    "id": "calculus_q002",
+    "document": "calculus_001",
+    "question": "Qual gráfico confirma visualmente a estimativa de um limite obtida por valores em uma tabela?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "multimodal_reasoning",
+    "expected_evidence": {
+      "source_page": 16,
+      "page": 16,
+      "component_type": "figure",
+      "description": "Figura 2.13 apresentando o gráfico da função utilizada para confirmar a estimativa do limite."
+    },
+    "source_page": 16
+  },
+  {
+    "id": "calculus_q003",
+    "document": "calculus_001",
+    "question": "Qual tabela apresenta a relação entre velocidade próxima à velocidade da luz e aumento de massa?",
+    "question_type": "table",
+    "difficulty": "medium",
+    "evaluation_category": "table_retrieval",
+    "expected_evidence": {
+      "source_page": 31,
+      "page": 31,
+      "component_type": "table",
+      "description": "Tabela 2.8 contendo a relação entre velocidades próximas à velocidade da luz e razão entre massas."
+    },
+    "source_page": 31
+  },
+  {
+    "id": "calculus_q004",
+    "document": "calculus_001",
+    "question": "Qual figura representa a relação geométrica utilizada no teorema do limite envolvendo seno?",
+    "question_type": "figure",
+    "difficulty": "hard",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 50,
+      "page": 50,
+      "component_type": "figure",
+      "description": "Figura 2.30 mostrando as funções seno e tangente representadas no círculo unitário."
+    },
+    "source_page": 50
+  },
+  {
+    "id": "calculus_q005",
+    "document": "calculus_001",
+    "question": "Quais figuras apresentam exemplos de funções que não são contínuas em um ponto?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 58,
+      "page": 58,
+      "component_type": "figure",
+      "description": "Figuras 2.33 e 2.34 apresentando exemplos de descontinuidade."
+    },
+    "source_page": 58
+  },
+  {
+    "id": "calculus_q006",
+    "document": "calculus_001",
+    "question": "Qual tabela apresenta uma tradução da definição epsilon-delta de limite?",
+    "question_type": "table",
+    "difficulty": "hard",
+    "evaluation_category": "table_retrieval",
+    "expected_evidence": {
+      "source_page": 73,
+      "page": 73,
+      "component_type": "table",
+      "description": "Tabela 2.9 contendo a tradução da definição epsilon-delta do limite."
+    },
+    "source_page": 73
+  },
+  {
+    "id": "calculus_q007",
+    "document": "calculus_001",
+    "question": "Qual figura demonstra a aproximação de uma reta secante para uma reta tangente?",
+    "question_type": "figure",
+    "difficulty": "hard",
+    "evaluation_category": "multimodal_reasoning",
+    "expected_evidence": {
+      "source_page": 94,
+      "page": 94,
+      "component_type": "figure",
+      "description": "Figuras 3.3 e 3.4 mostrando retas secantes aproximando a reta tangente."
+    },
+    "source_page": 94
+  },
+  {
+    "id": "calculus_q008",
+    "document": "calculus_001",
+    "question": "Qual figura apresenta uma reta tangente ao gráfico de uma função em um ponto específico?",
+    "question_type": "figure",
+    "difficulty": "medium",
+    "evaluation_category": "visual_evidence",
+    "expected_evidence": {
+      "source_page": 95,
+      "page": 95,
+      "component_type": "figure",
+      "description": "Figura 3.5 mostrando a reta tangente ao gráfico de uma função."
+    },
+    "source_page": 95
+  }
+]
