@@ -11,6 +11,7 @@ MODEL_CACHE_DIR = Path("/root/.cache/huggingface/models--Qwen--Qwen3-VL-4B-Instr
 MAX_NEW_TOKENS = 128
 MAX_IMAGE_SIDE = 1024
 
+
 def resize_visual_if_needed(image):
     width, height = image.size
     largest_side = max(width, height)

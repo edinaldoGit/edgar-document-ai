@@ -37,6 +37,25 @@ class ModalEmbeddingClient:
 
         return result
 
+    async def aembed_texts(
+        self,
+        texts: list[str],
+    ) -> dict[str, Any]:
+        if not texts:
+            raise ValueError("Texts must not be empty.")
+
+        if any(not text.strip() for text in texts):
+            raise ValueError("Texts must not contain blank values.")
+
+        service = self._get_service()
+
+        result = await service.embed.remote.aio(texts)
+
+        if not isinstance(result, dict):
+            raise RuntimeError("Modal embedding service returned an invalid response.")
+
+        return result
+
     def _get_service(self) -> Any:
         if self._service is not None:
             return self._service

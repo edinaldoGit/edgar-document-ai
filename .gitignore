@@ -84,3 +84,12 @@ data/evaluation_dataset/processed/
 # Experiment generated artifacts
 experiments/runs/
 experiments/datasets/
+
+# EU2026 local inputs and generated artifacts
+/experiments/eu2026/output/
+/experiments/eu2026/input/*.pdf
+/experiments/eu2026/page_preview/
+
+# Accidental HTML downloads at repository root
+/index.html
+/index.html.1

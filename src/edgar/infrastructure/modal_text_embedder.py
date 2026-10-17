@@ -11,6 +11,32 @@ class ModalTextEmbedder:
     ):
         self._client = client
 
+    async def aembed(
+        self,
+        texts: list[str],
+    ) -> list[list[float]]:
+        response = await self._client.aembed_texts(
+            texts,
+        )
+
+        embeddings = response.get("embeddings")
+
+        if not isinstance(embeddings, list):
+            raise RuntimeError("Modal embedding service returned invalid embeddings.")
+
+        if len(embeddings) != len(texts):
+            raise RuntimeError("Modal embedding service returned an unexpected embedding count.")
+
+        result: list[list[float]] = []
+
+        for embedding in embeddings:
+            if not isinstance(embedding, list):
+                raise RuntimeError("Modal embedding service returned an invalid embedding.")
+
+            result.append([float(value) for value in embedding])
+
+        return result
+
     def embed(
         self,
         texts: list[str],

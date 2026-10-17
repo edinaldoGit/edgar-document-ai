@@ -2,8 +2,11 @@ from pathlib import Path
 
 from qdrant_client import QdrantClient
 
+from edgar.generation.pipeline import AnsweringPipeline
 from edgar.indexing.document_runner import DocumentIndexingRunner
 from edgar.indexing.pipeline import IndexingPipeline
+from edgar.infrastructure.modal_answer_generation_client import ModalAnswerGenerationClient
+from edgar.infrastructure.modal_answer_generator import ModalAnswerGenerator
 from edgar.infrastructure.modal_embedding_client import ModalEmbeddingClient
 from edgar.infrastructure.modal_layout_analyzer import ModalLayoutAnalyzer
 from edgar.infrastructure.modal_layout_client import ModalLayoutClient
@@ -30,6 +33,7 @@ from edgar.ingestion.text_processing import NativeTextProcessor
 from edgar.ingestion.visual_description_processing import (
     VisualDescriptionProcessor,
 )
+from edgar.retrieval.semantic import SemanticRetriever
 
 
 def build_ingestion_runner(
@@ -91,6 +95,7 @@ def build_ingestion_runner(
 def build_indexing_runner(
     *,
     storage_root: str | Path,
+    qdrant_path: str | Path | None = None,
 ) -> DocumentIndexingRunner:
     ingestion_runner = build_ingestion_runner(
         storage_root=storage_root,
@@ -100,8 +105,15 @@ def build_indexing_runner(
         client=ModalEmbeddingClient(),
     )
 
+    if qdrant_path is None:
+        client = QdrantClient(":memory:")
+    else:
+        client = QdrantClient(
+            path=str(qdrant_path),
+        )
+
     vector_store = QdrantVectorStore(
-        client=QdrantClient(":memory:"),
+        client=client,
     )
 
     indexing_pipeline = IndexingPipeline(
@@ -112,4 +124,44 @@ def build_indexing_runner(
     return DocumentIndexingRunner(
         ingestion_runner=ingestion_runner,
         indexing_pipeline=indexing_pipeline,
+    )
+
+
+def build_retriever(
+    *,
+    qdrant_path: str | Path,
+) -> SemanticRetriever:
+    embedder = ModalTextEmbedder(
+        client=ModalEmbeddingClient(),
+    )
+
+    vector_store = QdrantVectorStore(
+        client=QdrantClient(
+            path=str(qdrant_path),
+        ),
+    )
+
+    return SemanticRetriever(
+        embedder=embedder,
+        searcher=vector_store,
+    )
+
+
+def build_answering_pipeline(
+    *,
+    qdrant_path: str | Path,
+    max_new_tokens: int = 256,
+) -> AnsweringPipeline:
+    retriever = build_retriever(
+        qdrant_path=qdrant_path,
+    )
+
+    generator = ModalAnswerGenerator(
+        client=ModalAnswerGenerationClient(),
+        max_new_tokens=max_new_tokens,
+    )
+
+    return AnsweringPipeline(
+        retriever=retriever,
+        generator=generator,
     )
