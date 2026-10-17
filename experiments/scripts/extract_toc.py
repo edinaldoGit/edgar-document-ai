@@ -1,13 +1,10 @@
-from pathlib import Path
 import json
+from pathlib import Path
 
 import pymupdf
 
-
 INPUT_DIR = Path("data/evaluation_dataset/originals")
-OUTPUT_FILE = Path(
-    "data/evaluation_dataset/metadata/toc.json"
-)
+OUTPUT_FILE = Path("data/evaluation_dataset/metadata/toc.json")
 
 
 def extract_toc(pdf_path: Path) -> dict:

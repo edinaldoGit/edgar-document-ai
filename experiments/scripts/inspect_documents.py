@@ -3,11 +3,8 @@ from pathlib import Path
 
 import pymupdf
 
-
 DATASET_DIR = Path("data/evaluation_dataset/originals")
-OUTPUT_FILE = Path(
-    "data/evaluation_dataset/metadata/document_inspection.json"
-)
+OUTPUT_FILE = Path("data/evaluation_dataset/metadata/document_inspection.json")
 
 
 def inspect_pdf(path: Path) -> dict:

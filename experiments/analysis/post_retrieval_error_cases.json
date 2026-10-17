@@ -1,0 +1,34 @@
+{
+  "scope": "Queries with exact expected component retrieved in top-20 but Faithfulness below 1.0",
+  "cases": [
+    {
+      "id": "calculus_q004",
+      "faithfulness": 0.5,
+      "component_first_rank": 10,
+      "classification": "generation_evidence_selection_error",
+      "observation": "The expected figure component was retrieved, but the generator ignored it and cited other evidences, concluding that the appropriate figure could not be identified."
+    },
+    {
+      "id": "calculus_q007",
+      "faithfulness": 0.6666666666666666,
+      "component_first_rank": 5,
+      "classification": "alternative_evidence_and_incomplete_generation",
+      "observation": "The expected component was retrieved, but the answer relied on alternative figure captions that were semantically related to the same tangent/secant concept. The generated response ends mid-sentence, indicating an incomplete generation."
+    },
+    {
+      "id": "physics_q002",
+      "faithfulness": 0.6666666666666666,
+      "component_first_rank": 18,
+      "classification": "equivalent_neighbor_component_used",
+      "observation": "The expected figure component appeared at rank 18, while the answer used a higher-ranked figure caption and related text referring to the same Figure 3.5. This illustrates that strict component-type matching may classify semantically sufficient neighboring evidence as a miss."
+    },
+    {
+      "id": "physics_q006",
+      "faithfulness": 0.8,
+      "component_first_rank": 9,
+      "classification": "table_representation_error",
+      "observation": "The expected table was retrieved and cited, but its serialized representation flattened row/value relationships, making object-to-acceleration associations ambiguous and contributing to partially unsupported generated details."
+    }
+  ],
+  "interpretation": "Retrieval of the expected component does not guarantee a fully faithful answer. Post-retrieval errors include evidence selection, incomplete generation, use of equivalent neighboring components, and insufficient component serialization."
+}

@@ -3,18 +3,11 @@ from pathlib import Path
 
 import pymupdf
 
+METADATA_FILE = Path("data/evaluation_dataset/metadata/documents.json")
 
-METADATA_FILE = Path(
-    "data/evaluation_dataset/metadata/documents.json"
-)
+INPUT_DIR = Path("data/evaluation_dataset/originals")
 
-INPUT_DIR = Path(
-    "data/evaluation_dataset/originals"
-)
-
-OUTPUT_DIR = Path(
-    "data/evaluation_dataset/processed"
-)
+OUTPUT_DIR = Path("data/evaluation_dataset/processed")
 
 
 def create_subset(
@@ -47,26 +40,16 @@ def main():
         exist_ok=True,
     )
 
-    documents = json.loads(
-        METADATA_FILE.read_text(
-            encoding="utf-8"
-        )
-    )
+    documents = json.loads(METADATA_FILE.read_text(encoding="utf-8"))
 
     for document in documents:
         pages = document["selected_pages"]
 
         source = INPUT_DIR / document["original_file"]
 
-        output = (
-            OUTPUT_DIR /
-            f'{document["id"]}.pdf'
-        )
+        output = OUTPUT_DIR / f"{document['id']}.pdf"
 
-        print(
-            f'Creating {output.name}: '
-            f'pages {pages["start"]}-{pages["end"]}'
-        )
+        print(f"Creating {output.name}: pages {pages['start']}-{pages['end']}")
 
         create_subset(
             source,

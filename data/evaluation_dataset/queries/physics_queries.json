@@ -11,7 +11,8 @@
       "page": 2,
       "component_type": "plain_text",
       "description": "Definição textual de deslocamento apresentada na seção Position, Displacement, and Average Velocity."
-    }
+    },
+    "reference_answer": "O deslocamento é a mudança de posição do objeto e é calculado pela posição final menos a posição inicial: Δx = xf - x0."
   },
   {
     "id": "physics_q002",
@@ -25,7 +26,8 @@
       "page": 6,
       "component_type": "figure",
       "description": "Gráfico de posição versus tempo apresentado na Figura 3.5."
-    }
+    },
+    "reference_answer": "A Figura 3.5 representa a posição de Jill em função do tempo. A inclinação da linha entre os pontos inicial e final representa sua velocidade média."
   },
   {
     "id": "physics_q003",
@@ -39,7 +41,8 @@
       "page": 59,
       "component_type": "figure",
       "description": "Diagrama comparando os movimentos das duas bolas apresentado na Figura 4.8."
-    }
+    },
+    "reference_answer": "A Figura 4.8 compara uma bola em queda a partir do repouso com outra lançada horizontalmente, mostrando que seus movimentos verticais são iguais e independentes do movimento horizontal."
   },
   {
     "id": "physics_q004",
@@ -53,7 +56,8 @@
       "page": 100,
       "component_type": "figure",
       "description": "Diagramas de corpo livre apresentados na Figura 5.4."
-    }
+    },
+    "reference_answer": "A Figura 5.4 apresenta diagramas de corpo livre com forças como a força normal, o peso e o atrito atuando sobre o objeto."
   },
   {
     "id": "physics_q005",
@@ -67,7 +71,8 @@
       "page": 126,
       "component_type": "figure",
       "description": "Representação das forças e componentes em um plano inclinado na Figura 5.22."
-    }
+    },
+    "reference_answer": "A Figura 5.22 decompõe as forças em eixos paralelo e perpendicular ao plano inclinado, permitindo analisar separadamente suas componentes."
   },
   {
     "id": "physics_q006",
@@ -81,6 +86,7 @@
       "page": 77,
       "component_type": "table",
       "description": "Tabela 4.1 contendo acelerações centrípetas típicas."
-    }
+    },
+    "reference_answer": "A Tabela 4.1 apresenta 0,233 m/s² para um satélite em órbita geoestacionária, 5,78 m/s² para a borda de um CD em reprodução, 2–3 g para um jato em barrel roll, 5 g para uma montanha-russa e 9,0 × 10²² m/s² para um elétron orbitando um próton no modelo simples de Bohr."
   }
 ]

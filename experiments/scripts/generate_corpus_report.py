@@ -3,22 +3,13 @@ from pathlib import Path
 
 import pymupdf
 
+METADATA_FILE = Path("data/evaluation_dataset/metadata/documents.json")
 
-METADATA_FILE = Path(
-    "data/evaluation_dataset/metadata/documents.json"
-)
+PDF_DIR = Path("data/evaluation_dataset/processed")
 
-PDF_DIR = Path(
-    "data/evaluation_dataset/processed"
-)
+OUTPUT_JSON = Path("experiments/datasets/corpus_report.json")
 
-OUTPUT_JSON = Path(
-    "experiments/datasets/corpus_report.json"
-)
-
-OUTPUT_MD = Path(
-    "experiments/datasets/corpus_summary.md"
-)
+OUTPUT_MD = Path("experiments/datasets/corpus_summary.md")
 
 
 def analyze_pdf(path: Path) -> dict:
@@ -28,9 +19,7 @@ def analyze_pdf(path: Path) -> dict:
 
         for page in pdf:
             total_images += len(page.get_images(full=True))
-            total_text_chars += len(
-                page.get_text("text")
-            )
+            total_text_chars += len(page.get_text("text"))
 
         return {
             "pages": len(pdf),
@@ -44,19 +33,12 @@ def analyze_pdf(path: Path) -> dict:
 
 
 def main():
-    documents = json.loads(
-        METADATA_FILE.read_text(
-            encoding="utf-8"
-        )
-    )
+    documents = json.loads(METADATA_FILE.read_text(encoding="utf-8"))
 
     report = []
 
     for document in documents:
-        pdf_path = (
-            PDF_DIR /
-            f'{document["id"]}.pdf'
-        )
+        pdf_path = PDF_DIR / f"{document['id']}.pdf"
 
         print(
             "Analyzing:",
@@ -107,20 +89,18 @@ def main():
 
         markdown.extend(
             [
-                f'## {item["title"]}',
+                f"## {item['title']}",
                 "",
-                f'- Identificador: `{item["id"]}`',
-                f'- Domínio: {item["domain"]}',
-                f'- Documento original: `{item["source_file"]}`',
-                f'- Intervalo selecionado: páginas '
-                f'{item["selected_pages"]["start"]}-'
-                f'{item["selected_pages"]["end"]}',
-                f'- Quantidade de páginas: {stats["pages"]}',
-                f'- Objetos visuais detectados no PDF: '
-                f'{stats["images"]}',
-                f'- Quantidade de caracteres textuais extraídos: '
-                f'{stats["text_characters"]}',
-                f'- Tamanho do arquivo: {stats["file_size_mb"]} MB',
+                f"- Identificador: `{item['id']}`",
+                f"- Domínio: {item['domain']}",
+                f"- Documento original: `{item['source_file']}`",
+                f"- Intervalo selecionado: páginas "
+                f"{item['selected_pages']['start']}-"
+                f"{item['selected_pages']['end']}",
+                f"- Quantidade de páginas: {stats['pages']}",
+                f"- Objetos visuais detectados no PDF: {stats['images']}",
+                f"- Quantidade de caracteres textuais extraídos: {stats['text_characters']}",
+                f"- Tamanho do arquivo: {stats['file_size_mb']} MB",
                 "",
                 "### Justificativa da seleção",
                 "",

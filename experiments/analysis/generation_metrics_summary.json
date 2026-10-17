@@ -1,0 +1,350 @@
+{
+  "sources": {
+    "faithfulness_report": "experiments/runs/20261001_210850_faithfulness/faithfulness_report.json",
+    "response_relevancy_report": "experiments/runs/20260930_232735_ragas/ragas_report.json"
+  },
+  "overall": {
+    "total_queries": 26,
+    "faithfulness_valid_queries": 25,
+    "faithfulness_excluded_queries": [
+      "statistics_q003"
+    ],
+    "mean_faithfulness": 0.792,
+    "response_relevancy_valid_queries": 26,
+    "mean_response_relevancy": 0.780269082858039
+  },
+  "by_document": {
+    "calculus_001": {
+      "queries": 8,
+      "faithfulness_valid_queries": 8,
+      "mean_faithfulness": 0.6770833333333334,
+      "mean_response_relevancy": 0.7352275137816832
+    },
+    "graphs_001": {
+      "queries": 6,
+      "faithfulness_valid_queries": 6,
+      "mean_faithfulness": 0.7777777777777778,
+      "mean_response_relevancy": 0.7631782860921841
+    },
+    "physics_001": {
+      "queries": 6,
+      "faithfulness_valid_queries": 6,
+      "mean_faithfulness": 0.8277777777777777,
+      "mean_response_relevancy": 0.8635552928314627
+    },
+    "statistics_001": {
+      "queries": 6,
+      "faithfulness_valid_queries": 5,
+      "mean_faithfulness": 0.95,
+      "mean_response_relevancy": 0.7741290950856112
+    }
+  },
+  "by_category": {
+    "multimodal_reasoning": {
+      "queries": 7,
+      "faithfulness_valid_queries": 7,
+      "mean_faithfulness": 0.7023809523809523,
+      "mean_response_relevancy": 0.7943503364139297
+    },
+    "table_retrieval": {
+      "queries": 5,
+      "faithfulness_valid_queries": 5,
+      "mean_faithfulness": 0.5933333333333334,
+      "mean_response_relevancy": 0.8443407690609307
+    },
+    "text_retrieval": {
+      "queries": 4,
+      "faithfulness_valid_queries": 4,
+      "mean_faithfulness": 1.0,
+      "mean_response_relevancy": 0.727683477254441
+    },
+    "visual_evidence": {
+      "queries": 10,
+      "faithfulness_valid_queries": 9,
+      "mean_faithfulness": 0.8796296296296297,
+      "mean_response_relevancy": 0.7594106045089087
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "queries": 4,
+      "faithfulness_valid_queries": 4,
+      "mean_faithfulness": 1.0,
+      "mean_response_relevancy": 0.727683477254441
+    },
+    "hard": {
+      "queries": 7,
+      "faithfulness_valid_queries": 7,
+      "mean_faithfulness": 0.5952380952380952,
+      "mean_response_relevancy": 0.6838913556466405
+    },
+    "medium": {
+      "queries": 15,
+      "faithfulness_valid_queries": 14,
+      "mean_faithfulness": 0.830952380952381,
+      "mean_response_relevancy": 0.839268183717651
+    }
+  },
+  "results": [
+    {
+      "id": "calculus_q001",
+      "document": "calculus_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.9999999999999996
+    },
+    {
+      "id": "calculus_q002",
+      "document": "calculus_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "multimodal_reasoning",
+      "faithfulness": 0.75,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.7875467932918258
+    },
+    {
+      "id": "calculus_q003",
+      "document": "calculus_001",
+      "question_type": "table",
+      "difficulty": "medium",
+      "evaluation_category": "table_retrieval",
+      "faithfulness": 0.5,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.8810490637075511
+    },
+    {
+      "id": "calculus_q004",
+      "document": "calculus_001",
+      "question_type": "figure",
+      "difficulty": "hard",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 0.5,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.0
+    },
+    {
+      "id": "calculus_q005",
+      "document": "calculus_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.941374442078818
+    },
+    {
+      "id": "calculus_q006",
+      "document": "calculus_001",
+      "question_type": "table",
+      "difficulty": "hard",
+      "evaluation_category": "table_retrieval",
+      "faithfulness": 0.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.8642553741279194
+    },
+    {
+      "id": "calculus_q007",
+      "document": "calculus_001",
+      "question_type": "figure",
+      "difficulty": "hard",
+      "evaluation_category": "multimodal_reasoning",
+      "faithfulness": 0.6666666666666666,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.6806206499281193
+    },
+    {
+      "id": "calculus_q008",
+      "document": "calculus_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.7269737871192322
+    },
+    {
+      "id": "graphs_q001",
+      "document": "graphs_001",
+      "question_type": "text",
+      "difficulty": "easy",
+      "evaluation_category": "text_retrieval",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.8105631826838181
+    },
+    {
+      "id": "graphs_q002",
+      "document": "graphs_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.4349125647753252
+    },
+    {
+      "id": "graphs_q003",
+      "document": "graphs_001",
+      "question_type": "figure",
+      "difficulty": "hard",
+      "evaluation_category": "multimodal_reasoning",
+      "faithfulness": 0.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.7641765353052044
+    },
+    {
+      "id": "graphs_q004",
+      "document": "graphs_001",
+      "question_type": "table",
+      "difficulty": "medium",
+      "evaluation_category": "table_retrieval",
+      "faithfulness": 0.6666666666666666,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.9063448877015432
+    },
+    {
+      "id": "graphs_q005",
+      "document": "graphs_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.9408971525582699
+    },
+    {
+      "id": "graphs_q006",
+      "document": "graphs_001",
+      "question_type": "figure",
+      "difficulty": "hard",
+      "evaluation_category": "multimodal_reasoning",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.7221753935289437
+    },
+    {
+      "id": "physics_q001",
+      "document": "physics_001",
+      "question_type": "text",
+      "difficulty": "easy",
+      "evaluation_category": "text_retrieval",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.7419897532204359
+    },
+    {
+      "id": "physics_q002",
+      "document": "physics_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 0.6666666666666666,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.9104175183382766
+    },
+    {
+      "id": "physics_q003",
+      "document": "physics_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "multimodal_reasoning",
+      "faithfulness": 0.5,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.8499214462071178
+    },
+    {
+      "id": "physics_q004",
+      "document": "physics_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.9375456861700717
+    },
+    {
+      "id": "physics_q005",
+      "document": "physics_001",
+      "question_type": "figure",
+      "difficulty": "hard",
+      "evaluation_category": "multimodal_reasoning",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.9163162705922363
+    },
+    {
+      "id": "physics_q006",
+      "document": "physics_001",
+      "question_type": "table",
+      "difficulty": "medium",
+      "evaluation_category": "table_retrieval",
+      "faithfulness": 0.8,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.8251410824606381
+    },
+    {
+      "id": "statistics_q001",
+      "document": "statistics_001",
+      "question_type": "text",
+      "difficulty": "easy",
+      "evaluation_category": "text_retrieval",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.6166261014582826
+    },
+    {
+      "id": "statistics_q002",
+      "document": "statistics_001",
+      "question_type": "text",
+      "difficulty": "easy",
+      "evaluation_category": "text_retrieval",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.7415548716552276
+    },
+    {
+      "id": "statistics_q003",
+      "document": "statistics_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": null,
+      "faithfulness_valid": false,
+      "response_relevancy": 0.7669495274702882
+    },
+    {
+      "id": "statistics_q004",
+      "document": "statistics_001",
+      "question_type": "figure",
+      "difficulty": "medium",
+      "evaluation_category": "visual_evidence",
+      "faithfulness": 0.75,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.9350353665788065
+    },
+    {
+      "id": "statistics_q005",
+      "document": "statistics_001",
+      "question_type": "table",
+      "difficulty": "medium",
+      "evaluation_category": "table_retrieval",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.7449134373070017
+    },
+    {
+      "id": "statistics_q006",
+      "document": "statistics_001",
+      "question_type": "multimodal",
+      "difficulty": "hard",
+      "evaluation_category": "multimodal_reasoning",
+      "faithfulness": 1.0,
+      "faithfulness_valid": true,
+      "response_relevancy": 0.8396952660440606
+    }
+  ]
+}

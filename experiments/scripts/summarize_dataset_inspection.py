@@ -1,10 +1,7 @@
 import json
 from pathlib import Path
 
-
-INPUT_FILE = Path(
-    "data/evaluation_dataset/metadata/document_inspection.json"
-)
+INPUT_FILE = Path("data/evaluation_dataset/metadata/document_inspection.json")
 
 
 def main():
@@ -31,17 +28,11 @@ def main():
 
         print("\nPages with more images:")
         for page in most_images:
-            print(
-                f'  page {page["page_number"]}: '
-                f'{page["image_count"]} images'
-            )
+            print(f"  page {page['page_number']}: {page['image_count']} images")
 
         print("\nPages with more text:")
         for page in most_text:
-            print(
-                f'  page {page["page_number"]}: '
-                f'{page["text_chars"]} chars'
-            )
+            print(f"  page {page['page_number']}: {page['text_chars']} chars")
 
         print()
 

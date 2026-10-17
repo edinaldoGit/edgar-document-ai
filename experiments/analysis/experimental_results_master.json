@@ -1,0 +1,262 @@
+{
+  "protocol": {
+    "questions": 26,
+    "retrieval_top_k": 20,
+    "faithfulness_paired_questions": [
+      "calculus_q001",
+      "calculus_q002",
+      "calculus_q003",
+      "calculus_q004",
+      "calculus_q005",
+      "calculus_q006",
+      "calculus_q007",
+      "calculus_q008",
+      "graphs_q001",
+      "graphs_q002",
+      "graphs_q003",
+      "graphs_q004",
+      "graphs_q005",
+      "graphs_q006",
+      "physics_q001",
+      "physics_q002",
+      "physics_q003",
+      "physics_q004",
+      "physics_q005",
+      "physics_q006",
+      "statistics_q001",
+      "statistics_q002",
+      "statistics_q004",
+      "statistics_q005"
+    ],
+    "faithfulness_excluded_questions": [
+      "statistics_q003",
+      "statistics_q006"
+    ],
+    "notes": [
+      "Faithfulness pareado usa as mesmas 24 perguntas.",
+      "Response Relevancy usa as 26 perguntas.",
+      "Component Hit usa documento, pagina e tipo, nao ID exato.",
+      "Component Hit nao se aplica diretamente a E1/E2.",
+      "E1/E2 usam orcamento de entrada de 5000 tokens.",
+      "Tempos registrados nao equivalem necessariamente a custo isolado do modelo."
+    ]
+  },
+  "configurations": {
+    "E1": {
+      "sources": {
+        "retrieval": "20261009_015248_e1_retrieval/retrieval_report.json",
+        "generation": "e1_budget5000_generation/generation_report.json",
+        "faithfulness": "20261011_063034_e1_faithfulness/faithfulness_report.json",
+        "relevancy": "20261011_072521_e1_response_relevancy/response_relevancy_report.json"
+      },
+      "questions": 26,
+      "generation_successes": 26,
+      "generation_elapsed_seconds_sum": 467.911,
+      "generation_timing_records": 26,
+      "page_hits": {
+        "5": 23,
+        "10": 24,
+        "20": 25
+      },
+      "component_hits": null,
+      "faithfulness_all_valid": {
+        "valid": 26,
+        "total": 26,
+        "mean": 0.9551282051282052
+      },
+      "response_relevancy": {
+        "valid": 26,
+        "total": 26,
+        "mean": 0.8339197347064017
+      },
+      "by_evidence_type": {
+        "figure": {
+          "questions": 17,
+          "page_hit_at_20": 16,
+          "component_hit_at_20": null,
+          "mean_response_relevancy": 0.8099586268853197
+        },
+        "table": {
+          "questions": 5,
+          "page_hit_at_20": 5,
+          "component_hit_at_20": null,
+          "mean_response_relevancy": 0.9404435473002242
+        },
+        "plain_text": {
+          "questions": 4,
+          "page_hit_at_20": 4,
+          "component_hit_at_20": null,
+          "mean_response_relevancy": 0.802599677203722
+        }
+      },
+      "faithfulness_paired": {
+        "questions": 24,
+        "mean": 0.9513888888888888
+      }
+    },
+    "E2": {
+      "sources": {
+        "retrieval": "20261009_020206_e2_retrieval/retrieval_report.json",
+        "generation": "e2_budget5000_generation/generation_report.json",
+        "faithfulness": "20261011_070005_e2_faithfulness/faithfulness_report.json",
+        "relevancy": "20261011_072911_e2_response_relevancy/response_relevancy_report.json"
+      },
+      "questions": 26,
+      "generation_successes": 26,
+      "generation_elapsed_seconds_sum": 465.32000000000005,
+      "generation_timing_records": 26,
+      "page_hits": {
+        "5": 24,
+        "10": 24,
+        "20": 25
+      },
+      "component_hits": null,
+      "faithfulness_all_valid": {
+        "valid": 26,
+        "total": 26,
+        "mean": 0.8653846153846154
+      },
+      "response_relevancy": {
+        "valid": 26,
+        "total": 26,
+        "mean": 0.7799737170529518
+      },
+      "by_evidence_type": {
+        "figure": {
+          "questions": 17,
+          "page_hit_at_20": 16,
+          "component_hit_at_20": null,
+          "mean_response_relevancy": 0.729120213939479
+        },
+        "table": {
+          "questions": 5,
+          "page_hit_at_20": 5,
+          "component_hit_at_20": null,
+          "mean_response_relevancy": 0.9352002543397552
+        },
+        "plain_text": {
+          "questions": 4,
+          "page_hit_at_20": 4,
+          "component_hit_at_20": null,
+          "mean_response_relevancy": 0.8020679336767066
+        }
+      },
+      "faithfulness_paired": {
+        "questions": 24,
+        "mean": 0.8680555555555556
+      }
+    },
+    "E3": {
+      "sources": {
+        "retrieval": "20261008_053033_e3_document_aware_retrieval/retrieval_report.json",
+        "generation": "20261008_055754_e3_generation/generation_report.json",
+        "faithfulness": "20261008_062701_e3_faithfulness/faithfulness_report.json",
+        "relevancy": "20261008_070558_e3_response_relevancy/response_relevancy_report.json"
+      },
+      "questions": 26,
+      "generation_successes": 26,
+      "generation_elapsed_seconds_sum": 284.877,
+      "generation_timing_records": 26,
+      "page_hits": {
+        "5": 20,
+        "10": 22,
+        "20": 25
+      },
+      "component_hits": {
+        "5": 4,
+        "10": 5,
+        "20": 5
+      },
+      "faithfulness_all_valid": {
+        "valid": 25,
+        "total": 26,
+        "mean": 0.7986666666666666
+      },
+      "response_relevancy": {
+        "valid": 26,
+        "total": 26,
+        "mean": 0.7992517114173872
+      },
+      "by_evidence_type": {
+        "figure": {
+          "questions": 17,
+          "page_hit_at_20": 16,
+          "component_hit_at_20": 0,
+          "mean_response_relevancy": 0.7898427614358163
+        },
+        "table": {
+          "questions": 5,
+          "page_hit_at_20": 5,
+          "component_hit_at_20": 1,
+          "mean_response_relevancy": 0.884371827052709
+        },
+        "plain_text": {
+          "questions": 4,
+          "page_hit_at_20": 4,
+          "component_hit_at_20": 4,
+          "mean_response_relevancy": 0.732839604294911
+        }
+      },
+      "faithfulness_paired": {
+        "questions": 24,
+        "mean": 0.8319444444444445
+      }
+    },
+    "E4": {
+      "sources": {
+        "retrieval": "20261008_032812_document_aware_retrieval/retrieval_report.json",
+        "generation": "20260922_001610_generation/generation_report.json",
+        "faithfulness": "20261001_210850_faithfulness/faithfulness_report.json",
+        "relevancy": "20260930_232735_ragas/ragas_report.json"
+      },
+      "questions": 26,
+      "generation_successes": 26,
+      "generation_elapsed_seconds_sum": 342.868,
+      "generation_timing_records": 26,
+      "page_hits": {
+        "5": 19,
+        "10": 22,
+        "20": 24
+      },
+      "component_hits": {
+        "5": 8,
+        "10": 10,
+        "20": 13
+      },
+      "faithfulness_all_valid": {
+        "valid": 25,
+        "total": 26,
+        "mean": 0.792
+      },
+      "response_relevancy": {
+        "valid": 26,
+        "total": 26,
+        "mean": 0.780269082858039
+      },
+      "by_evidence_type": {
+        "figure": {
+          "questions": 17,
+          "page_hit_at_20": 15,
+          "component_hit_at_20": 8,
+          "mean_response_relevancy": 0.773797552940388
+        },
+        "table": {
+          "questions": 5,
+          "page_hit_at_20": 5,
+          "component_hit_at_20": 1,
+          "mean_response_relevancy": 0.8443407690609307
+        },
+        "plain_text": {
+          "questions": 4,
+          "page_hit_at_20": 4,
+          "component_hit_at_20": 4,
+          "mean_response_relevancy": 0.727683477254441
+        }
+      },
+      "faithfulness_paired": {
+        "questions": 24,
+        "mean": 0.7833333333333333
+      }
+    }
+  }
+}

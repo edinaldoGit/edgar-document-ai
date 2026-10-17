@@ -12,7 +12,8 @@
       "component_type": "figure",
       "description": "Figura 2.10 mostrando a estimativa da área da região sob a curva utilizando três retângulos."
     },
-    "source_page": 8
+    "source_page": 8,
+    "reference_answer": "A Figura 2.10 apresenta a estimativa da área sob f(x) = x² + 1 usando três retângulos, cuja soma das áreas fornece uma aproximação de 8 unidades quadradas."
   },
   {
     "id": "calculus_q002",
@@ -27,7 +28,8 @@
       "component_type": "figure",
       "description": "Figura 2.13 apresentando o gráfico da função utilizada para confirmar a estimativa do limite."
     },
-    "source_page": 16
+    "source_page": 16,
+    "reference_answer": "A Figura 2.13 mostra o gráfico de f(x) = sin(x)/x, confirmando visualmente a estimativa obtida a partir dos valores da Tabela 2.2."
   },
   {
     "id": "calculus_q003",
@@ -42,7 +44,8 @@
       "component_type": "table",
       "description": "Tabela 2.8 contendo a relação entre velocidades próximas à velocidade da luz e razão entre massas."
     },
-    "source_page": 31
+    "source_page": 31,
+    "reference_answer": "A Tabela 2.8 apresenta a relação entre velocidades próximas à velocidade da luz e o aumento da razão entre a massa em movimento e a massa de repouso."
   },
   {
     "id": "calculus_q004",
@@ -57,7 +60,8 @@
       "component_type": "figure",
       "description": "Figura 2.30 mostrando as funções seno e tangente representadas no círculo unitário."
     },
-    "source_page": 50
+    "source_page": 50,
+    "reference_answer": "A Figura 2.30 apresenta a construção no círculo unitário usada para estabelecer a relação sin(θ) < θ < tan(θ), empregada na análise do limite envolvendo seno."
   },
   {
     "id": "calculus_q005",
@@ -72,7 +76,8 @@
       "component_type": "figure",
       "description": "Figuras 2.33 e 2.34 apresentando exemplos de descontinuidade."
     },
-    "source_page": 58
+    "source_page": 58,
+    "reference_answer": "As Figuras 2.33 e 2.34 apresentam exemplos de funções descontínuas em um ponto. Na primeira, o limite não existe; na segunda, o limite existe, mas é diferente do valor da função no ponto."
   },
   {
     "id": "calculus_q006",
@@ -87,7 +92,8 @@
       "component_type": "table",
       "description": "Tabela 2.9 contendo a tradução da definição epsilon-delta do limite."
     },
-    "source_page": 73
+    "source_page": 73,
+    "reference_answer": "A Tabela 2.9 traduz a definição epsilon-delta: para toda distância positiva ε de L, existe uma distância positiva δ de a tal que, se x estiver a menos de δ de a, com x diferente de a, então f(x) estará a menos de ε de L."
   },
   {
     "id": "calculus_q007",
@@ -102,7 +108,8 @@
       "component_type": "figure",
       "description": "Figuras 3.3 e 3.4 mostrando retas secantes aproximando a reta tangente."
     },
-    "source_page": 94
+    "source_page": 94,
+    "reference_answer": "A Figura 3.4 mostra que, à medida que o segundo ponto se aproxima do primeiro, as retas secantes se aproximam da reta tangente."
   },
   {
     "id": "calculus_q008",
@@ -117,6 +124,7 @@
       "component_type": "figure",
       "description": "Figura 3.5 mostrando a reta tangente ao gráfico de uma função."
     },
-    "source_page": 95
+    "source_page": 95,
+    "reference_answer": "A Figura 3.5 apresenta a reta tangente ao gráfico de f(x) = x no ponto (1, 1), mostrando que, perto desse ponto, o gráfico e a reta tangente praticamente coincidem."
   }
 ]

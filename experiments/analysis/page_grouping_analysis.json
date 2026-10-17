@@ -1,0 +1,12 @@
+{
+  "experiment": "page_grouping_diagnosis",
+  "source_run": "20260919_203148_retrieval",
+  "queries": 26,
+  "expected_page_found_in_top20": 17,
+  "page_hit_rate": 0.6538,
+  "observation": [
+    "Several failures recovered the expected page but not the expected component.",
+    "Evidence components from the same page are competing independently in vector ranking.",
+    "Grouping components by page may improve multimodal evidence retrieval."
+  ]
+}

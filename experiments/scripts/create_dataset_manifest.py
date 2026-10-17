@@ -3,14 +3,9 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+DATASET_DIR = Path("data/evaluation_dataset/processed")
 
-DATASET_DIR = Path(
-    "data/evaluation_dataset/processed"
-)
-
-OUTPUT_FILE = Path(
-    "experiments/datasets/dataset_manifest.json"
-)
+OUTPUT_FILE = Path("experiments/datasets/dataset_manifest.json")
 
 
 def file_hash(path: Path) -> str:

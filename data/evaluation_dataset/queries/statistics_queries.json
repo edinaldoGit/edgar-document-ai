@@ -7,11 +7,12 @@
     "difficulty": "easy",
     "evaluation_category": "text_retrieval",
     "expected_evidence": {
-      "source_page": 1,
-      "page": 37,
+      "source_page": 37,
+      "page": 1,
       "component_type": "plain_text",
       "description": "Introdução do capítulo de Estatística Descritiva apresentando seu objetivo de descrever dados."
-    }
+    },
+    "reference_answer": "A Estatística Descritiva reúne técnicas para descrever dados, transformando uma massa de dados brutos em informação organizada e interpretável."
   },
   {
     "id": "statistics_q002",
@@ -21,11 +22,12 @@
     "difficulty": "easy",
     "evaluation_category": "text_retrieval",
     "expected_evidence": {
-      "source_page": 13,
-      "page": 49,
+      "source_page": 49,
+      "page": 13,
       "component_type": "plain_text",
       "description": "Definição de mediana apresentada na seção de medidas de posição."
-    }
+    },
+    "reference_answer": "A mediana é o elemento que ocupa a posição central dos dados ordenados, dividindo a massa de dados em duas partes iguais."
   },
   {
     "id": "statistics_q003",
@@ -35,11 +37,12 @@
     "difficulty": "medium",
     "evaluation_category": "visual_evidence",
     "expected_evidence": {
-      "source_page": 17,
-      "page": 53,
+      "source_page": 53,
+      "page": 17,
       "component_type": "figure",
       "description": "Figuras representando distribuições assimétricas e simétricas com posição relativa entre média, moda e mediana."
-    }
+    },
+    "reference_answer": "As Figuras 13, 14 e 15 mostram distribuições assimétrica à direita, assimétrica à esquerda e simétrica, posicionando média, moda e mediana em cada caso."
   },
   {
     "id": "statistics_q004",
@@ -49,11 +52,12 @@
     "difficulty": "medium",
     "evaluation_category": "visual_evidence",
     "expected_evidence": {
-      "source_page": 54,
-      "page": 90,
+      "source_page": 90,
+      "page": 54,
       "component_type": "figure",
       "description": "Figura comparando a curva Normal padrão e curvas t com diferentes graus de liberdade."
-    }
+    },
+    "reference_answer": "A Figura 25 compara a curva Normal padrão com distribuições t de Student com 5 e 30 graus de liberdade."
   },
   {
     "id": "statistics_q005",
@@ -63,11 +67,12 @@
     "difficulty": "medium",
     "evaluation_category": "table_retrieval",
     "expected_evidence": {
-      "source_page": 8,
-      "page": 44,
+      "source_page": 44,
+      "page": 8,
       "component_type": "table",
       "description": "Tabela contendo distribuição de frequências absoluta, relativa e percentual."
-    }
+    },
+    "reference_answer": "A Tabela 3 apresenta classes de peso dos potinhos de canela e, para cada classe, as frequências absoluta, relativa e percentual, totalizando 50 observações, frequência relativa 1,000 e 100%."
   },
   {
     "id": "statistics_q006",
@@ -77,10 +82,11 @@
     "difficulty": "hard",
     "evaluation_category": "multimodal_reasoning",
     "expected_evidence": {
-      "source_page": 99,
-      "page": 135,
+      "source_page": 135,
+      "page": 99,
       "component_type": "figure",
       "description": "Figura apresentando exemplos de variáveis não correlacionadas, positivamente correlacionadas, negativamente correlacionadas e relacionamento quadrático."
-    }
+    },
+    "reference_answer": "A Figura 33 mostra quatro relacionamentos possíveis entre variáveis: ausência de correlação, correlação positiva, correlação negativa e relacionamento quadrático."
   }
 ]

@@ -1,10 +1,7 @@
 import json
 from pathlib import Path
 
-
-INPUT = Path(
-    "data/evaluation_dataset/metadata/document_inspection.json"
-)
+INPUT = Path("data/evaluation_dataset/metadata/document_inspection.json")
 
 
 documents = json.loads(INPUT.read_text(encoding="utf-8"))
@@ -21,13 +18,6 @@ for document in documents:
     )[:10]
 
     for page in pages:
-        print(
-            f'page={page["page_number"]} '
-            f'images={page["image_count"]} '
-            f'text={page["text_chars"]}'
-        )
-        print(
-            "preview:",
-            page["preview"][:100].replace("\n", " ")
-        )
+        print(f"page={page['page_number']} images={page['image_count']} text={page['text_chars']}")
+        print("preview:", page["preview"][:100].replace("\n", " "))
         print()

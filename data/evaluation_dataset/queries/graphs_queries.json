@@ -7,11 +7,12 @@
     "difficulty": "easy",
     "evaluation_category": "text_retrieval",
     "expected_evidence": {
-      "source_page": 13,
+      "source_page": 22,
       "page": 13,
       "component_type": "plain_text",
       "description": "Definição de grafo completo apresentada no capítulo de classes de grafos."
-    }
+    },
+    "reference_answer": "Um grafo completo é um grafo simples em que cada par de vértices distintos é adjacente. O grafo completo com n vértices é denotado por Kn."
   },
   {
     "id": "graphs_q002",
@@ -21,11 +22,12 @@
     "difficulty": "medium",
     "evaluation_category": "visual_evidence",
     "expected_evidence": {
-      "source_page": 13,
-      "page": 13,
+      "source_page": 12,
+      "page": 3,
       "component_type": "figure",
       "description": "Figura contendo um exemplo de grafo não dirigido."
-    }
+    },
+    "reference_answer": "A Figura 1.3 apresenta um exemplo de grafo não dirigido com os vértices v1, v2, v3 e v4 e as arestas e1, e2, e3, e4 e e5."
   },
   {
     "id": "graphs_q003",
@@ -35,11 +37,12 @@
     "difficulty": "hard",
     "evaluation_category": "multimodal_reasoning",
     "expected_evidence": {
-      "source_page": 14,
-      "page": 14,
+      "source_page": 13,
+      "page": 4,
       "component_type": "figure",
       "description": "Figura apresentando incidência e adjacência em um grafo."
-    }
+    },
+    "reference_answer": "Na Figura 1.4, a incidência é representada associando cada aresta aos seus vértices extremos, como endpts(e1) = {v1, v2}. A adjacência ocorre entre vértices conectados por uma aresta."
   },
   {
     "id": "graphs_q004",
@@ -49,11 +52,12 @@
     "difficulty": "medium",
     "evaluation_category": "table_retrieval",
     "expected_evidence": {
-      "source_page": 37,
+      "source_page": 46,
       "page": 37,
       "component_type": "table",
       "description": "Quadro com operações comuns em estruturas de dados de grafos."
-    }
+    },
+    "reference_answer": "O Quadro 1 apresenta operações como obter a quantidade de vértices e arestas, iterar sobre vértices e arestas, inserir e remover vértices e arestas, consultar adjacência, graus, vértices incidentes e arestas de entrada e saída."
   },
   {
     "id": "graphs_q005",
@@ -63,11 +67,12 @@
     "difficulty": "medium",
     "evaluation_category": "visual_evidence",
     "expected_evidence": {
-      "source_page": 49,
+      "source_page": 58,
       "page": 49,
       "component_type": "figure",
       "description": "Figura apresentando exemplo de árvore de busca em largura."
-    }
+    },
+    "reference_answer": "A Figura 3.1 apresenta um exemplo de árvore de busca em largura, tomando o vértice s como vértice inicial e mostrando a árvore de busca correspondente."
   },
   {
     "id": "graphs_q006",
@@ -77,10 +82,11 @@
     "difficulty": "hard",
     "evaluation_category": "multimodal_reasoning",
     "expected_evidence": {
-      "source_page": 95,
+      "source_page": 104,
       "page": 95,
       "component_type": "figure",
       "description": "Figura representando movimentos do cavalo no tabuleiro de xadrez."
-    }
+    },
+    "reference_answer": "A Figura 5.11 representa os movimentos possíveis do cavalo em um tabuleiro de xadrez."
   }
 ]

@@ -1,0 +1,15 @@
+{
+  "source_snapshot": "20260919_182500_corpus_ingestion",
+  "total_components": 7522,
+  "unique_pages_referenced": 568,
+  "components_with_crop": 741,
+  "components_by_doc_id": {
+    "023dceda-1534-4361-afee-5241f9cc21db": 3147,
+    "6c7ababc-a6d6-46a4-a00f-e23004c235f0": 1226,
+    "c0a964a5-cddf-4193-9981-64b0218fa249": 952,
+    "6da621a4-e1cb-40c4-b516-0a6dc9bb9bbe": 2197
+  },
+  "issue_counts": {},
+  "issue_examples": {},
+  "scope": "Physical file availability, metadata consistency, bbox boundaries and crop dimensions. Does not validate semantic correctness."
+}

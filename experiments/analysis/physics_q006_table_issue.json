@@ -1,0 +1,36 @@
+{
+  "query_id": "physics_q006",
+  "document": "physics_001",
+  "page": 77,
+  "component_type": "table",
+  "component_rank": 9,
+  "classification": "table_extraction_and_reconstruction_error",
+  "visual_validation": {
+    "correct_component": true,
+    "crop_available": true,
+    "bbox_visually_consistent": true
+  },
+  "text_extraction": {
+    "method": "PyMuPDF get_text",
+    "full_page_checked": true,
+    "missing_values_observed": [
+      "5.78",
+      "9.0 x 10^22"
+    ],
+    "observation": "Values visible in the table image were not recovered through the tested PyMuPDF text extraction."
+  },
+  "reconstruction": {
+    "default_y_tolerance": 1.0,
+    "default_columns": 1,
+    "default_rows": 1,
+    "tested_y_tolerance": 2.0,
+    "tested_columns": 2,
+    "tested_rows": 3,
+    "observation": "Increasing tolerance recovers both header columns but does not restore all rows or missing numeric values. Continuation-row merging also combines distinct objects."
+  },
+  "decision": {
+    "modify_pipeline_now": false,
+    "reindex_now": false,
+    "treatment": "Document as an observed limitation. Evaluate broader table extraction improvements as future work."
+  }
+}

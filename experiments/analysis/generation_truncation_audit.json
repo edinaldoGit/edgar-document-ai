@@ -1,0 +1,41 @@
+{
+  "source_run": "20260922_001610_generation",
+  "generation_max_new_tokens": 128,
+  "total_responses": 26,
+  "clearly_truncated": {
+    "count": 3,
+    "rate": 0.11538461538461539,
+    "query_ids": [
+      "calculus_q007",
+      "graphs_q003",
+      "statistics_q006"
+    ]
+  },
+  "ambiguous_cases": [
+    {
+      "id": "physics_q006",
+      "reason": "The response ends without terminal punctuation, but the final bullet is semantically plausible as a completed item. The primary observed issue is ambiguous table serialization rather than confirmed truncation."
+    }
+  ],
+  "cases": [
+    {
+      "id": "calculus_q007",
+      "classification": "clearly_truncated",
+      "ending": "à medida que os valores",
+      "observation": "The response ends in the middle of a subordinate clause."
+    },
+    {
+      "id": "graphs_q003",
+      "classification": "clearly_truncated",
+      "ending": "vértices e arestas conectados,",
+      "observation": "The response ends with an open syntactic construction."
+    },
+    {
+      "id": "statistics_q006",
+      "classification": "clearly_truncated",
+      "ending": "onde a correlação",
+      "observation": "The final sentence is incomplete."
+    }
+  ],
+  "interpretation": "The 128-token generation limit was sufficient for most evaluation queries, but at least three responses were visibly truncated. This parameter may have affected generation metrics for longer answers and should be reported as an experimental limitation rather than silently corrected after the run."
+}

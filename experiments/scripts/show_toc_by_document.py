@@ -1,10 +1,7 @@
 import json
 from pathlib import Path
 
-
-FILE = Path(
-    "data/evaluation_dataset/metadata/toc.json"
-)
+FILE = Path("data/evaluation_dataset/metadata/toc.json")
 
 
 documents = json.loads(FILE.read_text(encoding="utf-8"))
@@ -18,10 +15,6 @@ for doc in documents:
 
     for item in doc["toc"]:
         if item["level"] <= 2:
-            print(
-                f'level={item["level"]} '
-                f'page={item["page"]} '
-                f'{item["title"]}'
-            )
+            print(f"level={item['level']} page={item['page']} {item['title']}")
 
     print()

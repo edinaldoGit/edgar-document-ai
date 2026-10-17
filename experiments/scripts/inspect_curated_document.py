@@ -3,11 +3,8 @@ from pathlib import Path
 
 import pymupdf
 
-
 if len(sys.argv) != 2:
-    raise SystemExit(
-        "Uso: python inspect_curated_document.py <pdf>"
-    )
+    raise SystemExit("Uso: python inspect_curated_document.py <pdf>")
 
 
 pdf_path = Path(sys.argv[1])
@@ -21,9 +18,7 @@ with pymupdf.open(pdf_path) as pdf:
     for index, page in enumerate(pdf):
         text = page.get_text("text").strip()
 
-        images = len(
-            page.get_images(full=True)
-        )
+        images = len(page.get_images(full=True))
 
         print("=" * 80)
         print("Página:", index + 1)

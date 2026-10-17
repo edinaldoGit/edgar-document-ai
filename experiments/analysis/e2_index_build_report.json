@@ -1,0 +1,18 @@
+{
+  "baseline": "E2",
+  "source_records": "experiments/datasets/text_baselines/e2_records.jsonl",
+  "index_path": "storage/experiments/e2_page_text/qdrant",
+  "collection": "edgar-components",
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_dimension": 1024,
+  "normalized_embeddings": true,
+  "distance": "cosine",
+  "batch_size": 4,
+  "bbox_scope": "full_page_reference_only",
+  "elapsed_seconds": 146.933,
+  "summary": {
+    "indexed_records": 570,
+    "new_embeddings": 570,
+    "reused_embeddings": 0
+  }
+}

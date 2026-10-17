@@ -1,11 +1,7 @@
-from pathlib import Path
 import sys
 
-
 if len(sys.argv) != 4:
-    raise SystemExit(
-        "Uso: python show_page_mapping.py <inicio> <fim> <pagina_original>"
-    )
+    raise SystemExit("Uso: python show_page_mapping.py <inicio> <fim> <pagina_original>")
 
 
 start = int(sys.argv[1])
@@ -18,10 +14,6 @@ if not start <= original <= end:
 else:
     dataset_page = original - start + 1
 
-    print(
-        f"Página original: {original}"
-    )
+    print(f"Página original: {original}")
 
-    print(
-        f"Página no dataset: {dataset_page}"
-    )
+    print(f"Página no dataset: {dataset_page}")

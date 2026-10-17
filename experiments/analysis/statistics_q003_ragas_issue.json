@@ -1,0 +1,24 @@
+{
+  "query_id": "statistics_q003",
+  "status": "excluded_from_faithfulness_mean",
+  "reason": "Automated evaluation failed to produce valid structured output, and manual inspection identified an internal inconsistency in the source document.",
+  "source_inconsistency": {
+    "figure_13_caption": "Figura 13 é descrita como distribuição contínua assimétrica à direita.",
+    "figure_14_caption": "Figura 14 é descrita como distribuição contínua assimétrica à esquerda.",
+    "body_text": "O texto corrido associa a assimetria à direita à Figura 14 e a assimetria negativa à Figura 13.",
+    "reference_answer": "O gabarito segue as legendas e considera as Figuras 13, 14 e 15 como os três casos."
+  },
+  "generation_observation": "A resposta do EDGAR seleciona apenas a Figura 14 e a descreve como assimétrica à direita, ficando incompleta em relação ao gabarito e alinhada ao trecho conflitante do texto corrido.",
+  "ragas_observation": {
+    "batch_result": null,
+    "retry_result": null,
+    "error": "OutputParserException: evaluator returned free text instead of the JSON structure expected by RAGAS.",
+    "diagnostic_statement_by_statement_score": 0.4,
+    "diagnostic_score_used_in_final_mean": false
+  },
+  "final_treatment": {
+    "faithfulness_valid_queries": 25,
+    "faithfulness_total_queries": 26,
+    "mean_faithfulness_valid_queries": 0.792
+  }
+}

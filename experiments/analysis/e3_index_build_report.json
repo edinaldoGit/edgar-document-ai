@@ -1,0 +1,16 @@
+{
+  "configuration": "E3",
+  "definition": "Fine-grained EDGAR without VLM-generated visual descriptions.",
+  "source_index": "storage/experiments/20260919_182500_corpus_ingestion/qdrant",
+  "target_index": "storage/experiments/e3_no_visual_description/qdrant",
+  "removed_component_type": "figure",
+  "reused_embeddings": true,
+  "new_embedding_calls": 0,
+  "summary": {
+    "source_components": 7522,
+    "removed_visual_only_figures": 641,
+    "retained_components": 6881,
+    "embedding_dimension": 1024
+  },
+  "indexed_components": 6881
+}

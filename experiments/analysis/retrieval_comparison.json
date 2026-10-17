@@ -1,0 +1,70 @@
+{
+  "status": "recalculated_after_gold_page_fix",
+  "notes": [
+    "Metrics were recalculated after correcting the page-number convention in the evaluation dataset.",
+    "expected_evidence.page refers to the curated and indexed PDF page.",
+    "source_page refers to the original source PDF page.",
+    "Previously recorded retrieval metrics are superseded by the values in this file."
+  ],
+  "baseline_source_run": "20260919_203148_retrieval",
+  "queries": 26,
+  "experiments": [
+    {
+      "name": "semantic_retrieval_hit_at_5",
+      "description": "First 5 candidates from the semantic top-20 baseline.",
+      "source_run": "20260919_203148_retrieval",
+      "limit": 5,
+      "page_hits": 19,
+      "component_hits": 8,
+      "page_hit_rate": 0.7308,
+      "component_hit_rate": 0.3077
+    },
+    {
+      "name": "semantic_retrieval_hit_at_10",
+      "description": "First 10 candidates from the semantic top-20 baseline.",
+      "source_run": "20260919_203148_retrieval",
+      "limit": 10,
+      "page_hits": 22,
+      "component_hits": 10,
+      "page_hit_rate": 0.8462,
+      "component_hit_rate": 0.3846
+    },
+    {
+      "name": "semantic_retrieval_hit_at_20",
+      "description": "Direct semantic retrieval with 20 candidates.",
+      "source_run": "20260919_203148_retrieval",
+      "limit": 20,
+      "page_hits": 24,
+      "component_hits": 13,
+      "page_hit_rate": 0.9231,
+      "component_hit_rate": 0.5
+    },
+    {
+      "name": "reranker_v1_component_bonus",
+      "description": "Top-20 semantic candidates reranked using fixed component-type bonuses.",
+      "source_run": "20260919_205912_retrieval",
+      "page_hits": 14,
+      "component_hits": 9,
+      "page_hit_rate": 0.5385,
+      "component_hit_rate": 0.3462
+    },
+    {
+      "name": "reranker_v2_type_weighted",
+      "description": "Top-20 semantic candidates reranked using multiplicative component-type weighting.",
+      "source_run": "20260919_212616_retrieval",
+      "page_hits": 18,
+      "component_hits": 9,
+      "page_hit_rate": 0.6923,
+      "component_hit_rate": 0.3462
+    },
+    {
+      "name": "page_grouping_v1",
+      "description": "Top-20 semantic candidates grouped by page before selecting grouped evidence.",
+      "source_run": "20260919_214957_retrieval",
+      "page_hits": 19,
+      "component_hits": 9,
+      "page_hit_rate": 0.7308,
+      "component_hit_rate": 0.3462
+    }
+  ]
+}
